@@ -1,0 +1,1010 @@
+CRITICAL - 2021-07-30 04:08:18 --> Undefined property: CodeIgniter\View\View::$session
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/web/pages/checkout.php(20): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined prope...', '/Applications/M...', 20, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/check...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(18): view('web/pages/check...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->index()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-30 04:08:18 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 05:24:31 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 05:28:41 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 05:52:37 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/M...')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-30 05:52:37 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 05:52:45 --> syntax error, unexpected '=>' (T_DOUBLE_ARROW)
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(273): CodeIgniter\Autoloader\Autoloader->includeFile('/Applications/M...')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Autoloader/Autoloader.php(247): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers...')
+#2 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers...')
+#3 [internal function]: spl_autoload_call('App\\Controllers...')
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(885): class_exists('\\App\\Controller...', true)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(421): CodeIgniter\CodeIgniter->startController()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-30 05:52:45 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ParseError), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ParseError))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 06:46:30 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 06:46:47 --> Undefined variable: getAll
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/admin/pages/messageries.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 30, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('admin/pages/mes...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(65): view('admin/pages/mes...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->messageries()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-30 06:46:47 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 06:46:49 --> Undefined variable: getAll
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/admin/pages/messageries.php(30): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 30, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('admin/pages/mes...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(65): view('admin/pages/mes...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->messageries()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-30 06:46:49 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 06:55:57 --> Call to undefined method App\Models\WebModel::getEmails
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(66): CodeIgniter\Model->__call('getEmails', Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->messageries()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 06:55:57 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(BadMethodCallException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(BadMethodCallException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 06:56:55 --> Call to undefined method App\Models\WebModel::getEmails
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(66): CodeIgniter\Model->__call('getEmails', Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->messageries()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 06:56:55 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(BadMethodCallException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(BadMethodCallException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:11:25 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:11:58 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:12:38 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:13:49 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:15:10 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:22:58 --> Illegal string offset 'sender_email'
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/admin/pages/messageries.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Applications/M...', 62, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('admin/pages/mes...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(77): view('admin/pages/mes...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-30 07:22:58 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:24:27 --> Illegal string offset 'sender_email'
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/admin/pages/messageries.php(62): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string ...', '/Applications/M...', 62, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('admin/pages/mes...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(77): view('admin/pages/mes...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-30 07:24:27 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:30:04 --> Undefined index: object_email
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/admin/pages/messageries.php(68): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index...', '/Applications/M...', 68, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('admin/pages/mes...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(77): view('admin/pages/mes...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-30 07:30:04 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:45:36 --> Undefined variable: email
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/admin/pages/messageries.php(78): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 78, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('admin/pages/mes...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(77): view('admin/pages/mes...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-30 07:45:36 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:50:45 --> A non well formed numeric value encountered
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', '/Applications/M...', 76, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 07:50:45 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:51:34 --> A non well formed numeric value encountered
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', '/Applications/M...', 76, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 07:51:34 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:51:35 --> A non well formed numeric value encountered
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', '/Applications/M...', 76, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 07:51:35 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:51:35 --> A non well formed numeric value encountered
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', '/Applications/M...', 76, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 07:51:35 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:51:35 --> A non well formed numeric value encountered
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', '/Applications/M...', 76, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 07:51:35 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 07:51:35 --> A non well formed numeric value encountered
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', '/Applications/M...', 76, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 07:51:35 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 08:39:27 --> A non well formed numeric value encountered
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', '/Applications/M...', 76, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 08:39:27 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 08:39:28 --> A non well formed numeric value encountered
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', '/Applications/M...', 76, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 08:39:28 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 08:39:29 --> A non well formed numeric value encountered
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', '/Applications/M...', 76, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 08:39:29 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 08:39:29 --> A non well formed numeric value encountered
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', '/Applications/M...', 76, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 08:39:29 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 08:39:29 --> A non well formed numeric value encountered
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Dashboard.php(76): CodeIgniter\Debug\Exceptions->errorHandler(8, 'A non well form...', '/Applications/M...', 76, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Dashboard->read_email('1')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Dashboard))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 08:39:29 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 09:09:23 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 09:18:24 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 10:04:20 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 12:39:08 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 12:46:33 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 14:31:50 --> Undefined variable: rules
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(94): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 94, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->index()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-30 14:31:50 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 14:32:33 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 14:33:19 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 14:33:58 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 14:35:58 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 14:37:21 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 14:37:30 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 14:37:33 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\Exceptions\PageNotFoundException), 404)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\Exceptions\PageNotFoundException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 14:40:25 --> array_values() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_values() ...', '/Applications/M...', 104, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(104): array_values(NULL)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->index()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-30 14:40:25 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 15:34:00 --> Call to a member function remove() on array
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->index()
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#4 {main}
+CRITICAL - 2021-07-30 15:34:00 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(Error), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(Error))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 17:07:40 --> array_values() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_values() ...', '/Applications/M...', 103, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(103): array_values(NULL)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->index()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-30 17:07:40 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 17:07:52 --> array_values() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_values() ...', '/Applications/M...', 103, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(103): array_values(NULL)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->index()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-30 17:07:52 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 17:10:53 --> Invalid file: web/pages/corder_confirm.php
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/pages/corde...')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/corde...', Array, true)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(148): view('web/pages/corde...', Array)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-30 17:10:53 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 17:13:56 --> Invalid file: web/pages/order_confirm.php
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/pages/order...')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/order...', Array, true)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(147): view('web/pages/order...', Array)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-30 17:13:56 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 17:13:57 --> Invalid file: web/pages/order_confirm.php
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/pages/order...')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/order...', Array, true)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(147): view('web/pages/order...', Array)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-30 17:13:57 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 17:13:58 --> Invalid file: web/pages/order_confirm.php
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/pages/order...')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/order...', Array, true)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(147): view('web/pages/order...', Array)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-30 17:13:58 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 17:13:58 --> Invalid file: web/pages/order_confirm.php
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/pages/order...')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/order...', Array, true)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(147): view('web/pages/order...', Array)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-30 17:13:58 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 17:13:58 --> Invalid file: web/pages/order_confirm.php
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/pages/order...')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/order...', Array, true)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(147): view('web/pages/order...', Array)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-30 17:13:58 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 17:13:58 --> Invalid file: web/pages/order_confirm.php
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/pages/order...')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/order...', Array, true)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(147): view('web/pages/order...', Array)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-30 17:13:58 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 17:13:58 --> Invalid file: web/pages/order_confirm.php
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/pages/order...')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/order...', Array, true)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(147): view('web/pages/order...', Array)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-30 17:13:58 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 17:13:59 --> Invalid file: web/pages/order_confirm.php
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(213): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('web/pages/order...')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/order...', Array, true)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(147): view('web/pages/order...', Array)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#6 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#7 {main}
+CRITICAL - 2021-07-30 17:13:59 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(CodeIgniter\View\Exceptions\ViewException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(CodeIgniter\View\Exceptions\ViewException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 18:18:46 --> array_values() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_values() ...', '/Applications/M...', 103, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(103): array_values(NULL)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->index()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-30 18:18:46 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 18:19:39 --> array_values() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_values() ...', '/Applications/M...', 103, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(103): array_values(NULL)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->index()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-30 18:19:39 --> Uncaught ErrorException: include(): Filename cannot be empty in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 18:22:40 --> array_values() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_values() ...', '/Applications/M...', 105, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(105): array_values(NULL)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->index()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-30 18:22:40 --> Uncaught ErrorException: include(): Filename cannot be empty in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(2, 'include(): File...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 18:50:04 --> array_values() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_values() ...', '/Applications/M...', 148, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(148): array_values(NULL)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-30 18:50:04 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 18:51:00 --> array_values() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_values() ...', '/Applications/M...', 148, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(148): array_values(NULL)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-30 18:51:00 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 18:51:17 --> array_values() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_values() ...', '/Applications/M...', 148, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(148): array_values(NULL)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-30 18:51:17 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 18:52:49 --> array_values() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_values() ...', '/Applications/M...', 148, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(148): array_values(NULL)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-30 18:52:49 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-07-30 18:52:50 --> array_values() expects parameter 1 to be array, null given
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler(2, 'array_values() ...', '/Applications/M...', 148, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Checkout.php(148): array_values(NULL)
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Checkout->confirmation()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Checkout))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-07-30 18:52:50 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

@@ -1,0 +1,97 @@
+CRITICAL - 2021-07-22 01:26:15 --> Undefined variable: options_contact
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/web/pages/contact.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 9, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/conta...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(102): view('web/pages/conta...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->contactPage()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-22 01:52:32 --> Undefined variable: options_contact
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/web/pages/contact.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 9, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/conta...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(102): view('web/pages/conta...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->contactPage()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-22 01:53:28 --> Undefined variable: options_contact
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/web/pages/contact.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 9, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/conta...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(102): view('web/pages/conta...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->contactPage()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-22 01:53:43 --> Undefined variable: options_contact
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/web/pages/contact.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 9, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/conta...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(102): view('web/pages/conta...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->contactPage()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-22 01:53:56 --> Undefined variable: options_contact
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/web/pages/contact.php(9): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 9, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/conta...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(102): view('web/pages/conta...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->contactPage()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-22 06:32:53 --> Undefined variable: message
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/web/pages/contact.php(48): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 48, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/conta...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(103): view('web/pages/conta...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->contactPage()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-07-22 06:33:23 --> Cannot use object of type CodeIgniter\Validation\Validation as array
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/conta...', Array, true)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(103): view('web/pages/conta...', Array)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->contactPage()
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-22 08:37:43 --> You must supply the parameters: from, to.
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Config/Routes.php(42): CodeIgniter\Router\RouteCollection->match(Array, 'Home::/search')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(796): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-22 08:38:31 --> You must supply the parameters: from, to.
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Config/Routes.php(42): CodeIgniter\Router\RouteCollection->match(Array, 'Home::search')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(796): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}
+CRITICAL - 2021-07-22 08:39:10 --> You must supply the parameters: from, to.
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Config/Routes.php(42): CodeIgniter\Router\RouteCollection->match(Array, 'Home::search')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(796): require('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(389): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#5 {main}

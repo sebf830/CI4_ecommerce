@@ -1,0 +1,231 @@
+.wrapper_contact {
+    width: 80%;
+    background-color: white;
+    margin: 0 auto;
+}
+
+.content_form_contact {}
+
+.support {
+    padding: 1.5%;
+    display: flex;
+}
+
+.support_desc {
+    float: left;
+    width: 75%;
+}
+
+.support_desc h3 {
+    font-size: 30px;
+    color: #6c6c6c;
+    padding: 5px 0;
+    font-family: "Monda", sans-serif;
+}
+
+.support_desc p span {
+    font-size: 15px;
+    color: #666;
+}
+
+.support_desc p {
+    font-size: 12px;
+    color: #777;
+    line-height: 1.8em;
+    padding: 5px 0;
+}
+
+.support img {
+    margin-left: 4%;
+    margin-top: 0px;
+}
+
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+.group:before, .group:after {
+    content: "";
+    display: table;
+}
+
+.group:after {
+    clear: both;
+}
+
+.group {
+    zoom: 1;
+}
+
+.col {
+    display: block;
+    float: left;
+    margin: 0% 0 1% 1.6%;
+}
+
+.col:first-child {
+    margin-left: 0;
+}
+
+.span_2_of_3 {
+    width: 63.1%;
+    padding: 1.5%;
+}
+
+.span_1_of_3 {
+    width: 29.2%;
+    padding: 1.5%;
+}
+
+.span_2_of_3 h2, .span_1_of_3 h2 {
+    margin-bottom: 0.5em;
+    line-height: 1.2;
+    font-family: "Monda", sans-serif;
+    font-weight: normal;
+    margin-top: 0px;
+}
+
+.contact-form {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+.form_contact {
+    width: 75%;
+    padding-left: 2%;
+    padding-right: 5%;
+}
+
+.form-contact textarea {
+    width: 99%;
+}
+
+.contact-form div {
+    padding: 5px 0;
+}
+
+.contact-form span {
+    display: block;
+    font-size: 0.8125em;
+    color: #757575;
+    padding-bottom: 5px;
+    font-family: verdana, arial, helvetica, helve, sans-serif;
+}
+
+.contact-form input[type="text"], .contact-form textarea {
+    padding: 0px;
+    display: block;
+    width: 98%;
+    background: #fcfcfc;
+    border: none;
+    outline: none;
+    color: #464646;
+    font-size: 1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: inset 0px 0px 3px #999;
+    -webkit-box-shadow: inset 0px 0px 3px #999;
+    -moz-box-shadow: inset 0px 0px 3px #999;
+    -o-box-shadow: inset 0px 0px 3px #999;
+    -webkit-appearance: none;
+}
+
+.contact-form textarea {
+    resize: none;
+    height: 120px;
+}
+
+.contact-form input[type="submit"] {
+    padding: 7px 25px;
+    cursor: pointer;
+    background: #fff url(../images/large-button-overlay.png);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    color: #555 !important;
+    font-size: 1em;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.5);
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #eee;
+    border-color: #b8b5b5;
+    color: #444 !important;
+}
+
+.contact-form input[type="submit"]:active {
+    background-color: #fff;
+}
+
+.company_address {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.company_address p {
+    font-size: 0.8125em;
+    color: #757575;
+    padding: 0.2em 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.company_address p span {
+    text-decoration: underline;
+    color: #444;
+    cursor: pointer;
+}
+
+.map {
+    border: 1px solid #c7c7c7;
+    margin-bottom: 15px;
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 800px) {
+    .support {
+        flex-direction: column;
+        text-align: center;
+    }
+    .supportImg {
+        width: 140px;
+    }
+    .support_desc {
+        width: 98%;
+    }
+    .contact-form {
+        flex-direction: column;
+    }
+    .form_contact {
+        width: 98%;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .contact-form input[type="text"], .contact-form textarea {
+        padding: 3px;
+        font-size: 1.5em;
+    }
+    .span_1_of_3 {
+        width: 98%;
+        margin: 0 auto;
+    }
+    .company_address {
+        margin-top: 50px;
+        font-size: 1.5em;
+    }
+    .company_address p {
+        color: #757575;
+        padding: 0.2em 0;
+    }
+    .company_address p span {
+        text-decoration: underline;
+        color: #444;
+        cursor: pointer;
+        font-size: 1em;
+    }
+}
+
+@media only screen and (max-width: 640px) {}
+
+@media only screen and (max-width: 480px) {}

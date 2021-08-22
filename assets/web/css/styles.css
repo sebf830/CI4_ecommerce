@@ -1,0 +1,454 @@
+.login_panel {
+    border: 1px solid #ededed;
+    padding: 5%;
+    width: 60%;
+    text-align: center;
+    display: inline-block;
+}
+
+.button_login, .button_register {
+    width: 120px;
+    border: none;
+    color: white;
+    background: purple;
+    height: 30px;
+    font-size: 16px;
+}
+
+.button_register {
+    width: 180px;
+}
+
+.div-button-register {
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 90%;
+}
+
+.button_login:hover, .button_login:active {
+    background: rgb(131, 52, 131);
+}
+
+.buttons {
+    margin-top: 50px;
+}
+
+.login_panel input {
+    width: 70%;
+}
+
+.register {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form_register {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 3%;
+}
+
+.left-col-register {
+    margin-right: 50px;
+}
+
+.right-col-register, .left-col-register {
+    width: 46%;
+}
+
+.terms {
+    font-size: 12px;
+}
+
+/********* SHOPPING CART **********/
+
+.cartpage {
+    border: 1px solid #ddd;
+    padding: 10px;
+    min-height: 30em;
+}
+
+.cartpage h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 200px;
+}
+
+.tblone {
+    border: 1px solid #fff;
+    margin-bottom: 12px;
+    width: 100%;
+}
+
+.tblone th {
+    background: #666 none repeat scroll 0 0;
+    color: #fff;
+    font-size: 20px;
+    padding: 5px 8px;
+    text-align: center;
+}
+
+.tblone td {
+    padding: 10px;
+    text-align: center;
+}
+
+table.tblone tr:nth-child(2n + 1) {
+    background: #fff;
+    height: 30px;
+}
+
+table.tblone tr:nth-child(2n) {
+    background: #fdf0f1;
+    height: 30px;
+}
+
+table.tblone input[type="number"] {
+    border: 1px solid #ddd;
+    padding: 2px;
+    width: 60px;
+}
+
+table.tblone input[type="submit"] {
+    background: #333 none repeat scroll 0 0;
+    border: 1px solid #000;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 1px 5px;
+}
+
+table.tblone a {
+    color: #fe5800;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+table.tblone a:hover {
+    color: #000;
+}
+
+table.tblone img {
+    height: 20px;
+    width: 30px;
+}
+
+.tbltwo {
+    text-align: right;
+}
+
+.tbltwo th {
+    text-align: right;
+}
+
+.tbltwo td {
+    width: 15%;
+    text-align: right;
+}
+
+.tbltwo td span {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.shopping {
+    margin-top: 30px;
+    display: flex;
+}
+
+.shopleft img {
+    outline: none;
+}
+
+.shopleft a, .shopright a {
+    outline: none;
+}
+
+.shopright {
+    margin-left: 20px;
+}
+
+.shopright img {
+    width: 270px;
+    outline: none;
+}
+
+.delete_item button {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+.m-query {
+    display: none;
+}
+
+.separator-query {
+    display: none;
+}
+
+/*********** /SHOPPING CART ******************/
+
+/****************** BLOG ***********************/
+
+.container_blog {
+    display: flex;
+    padding: 0 20px;
+}
+
+#flex_container_blog {
+    width: 75%;
+    display: flex;
+    flex-flow: row wrap;
+    padding-right: 10px;
+}
+
+.card_blog {
+    width: 48%;
+    margin-right: 10px;
+    max-height: 500px;
+}
+
+.card_blog_large {
+    width: 30%;
+    margin-right: 10px;
+    height: 330px;
+}
+
+.title_article_blog {
+    padding: 0;
+    font-size: 16px;
+    color: grey;
+}
+
+.meta {
+    font-size: 11px;
+    font-style: italic;
+}
+
+.result_blog {
+    display: flex;
+    flex-direction: column;
+}
+
+.read_article {
+    width: 75%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.read_article h4 {
+    color: grey;
+    font-size: 21px;
+}
+
+.read_article p {
+    color: purple;
+    font-size: 14px;
+}
+
+.blog_navigation {
+    width: 25%;
+    background: lightgrey;
+    margin: 0 auto;
+    max-height: 170vh;
+    padding: 8px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search_blog {
+    padding: 20px 5px;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.search_blog p {
+    font-size: 14px;
+}
+
+#search_blog_input {
+    height: 30px;
+    background: white;
+    border: 1px solid grey;
+}
+
+#search_blog_submit {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 50px;
+    right: 5%;
+}
+
+.last_articles {
+    padding: 10px 5px;
+}
+
+.flex_last_articles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.img_last_art {
+    margin-right: 8px;
+    width: 30%
+}
+
+.txt_last_art {
+    width: 65%;
+    text-align: center;
+    color: grey;
+}
+
+/****************** /BLOG ***********************/
+
+/****** bannière cookie *******/
+
+.accept_cookie {
+    background: #cfcad1;
+    position: fixed;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    padding: 2rem 2rem;
+    text-align: center;
+    z-index: 90000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text_cookie {
+    margin-right: 20px;
+}
+
+.paw_cookie {
+    transform: rotate(35deg);
+    color: black;
+}
+
+.accept_button, .decline_button {
+    display: inline-block;
+    cursor: pointer;
+    padding: 0.65rem 0.95rem;
+    margin-left: 0.45rem;
+    margin-right: 10px;
+    color: #fff;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+    padding: 0 8px;
+}
+
+.accept_button {
+    background-image: linear-gradient(62deg, #a864f5 0%, #d49bf5 100%);
+}
+
+.decline_button {
+    background-image: linear-gradient(62deg, #918a99 0%, #aaa9ac 100%);
+}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 950px) {
+    .container_blog {
+        flex-direction: column;
+    }
+    .read_article, .blog_navigation {
+        width: 95%;
+    }
+    .read_article {
+        margin-bottom: 15px;
+    }
+    .blog_navigation {
+        height: 135vh;
+    }
+    #flex_container_blog {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .login_panel {
+        width: 80%;
+        margin: 8% 0 5%;
+    }
+    .wrapper-main {
+        width: 80%;
+    }
+    .tblone tr {
+        min-height: 35vh;
+        padding: 10px;
+    }
+    .tblone td {
+        padding: 8px;
+    }
+    .tblone th {
+        display: none;
+    }
+    .tblone, .tblone tr, .tblone td, .tblone tbody {
+        display: block;
+        width: 100%;
+        border: none;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .tblone td:nth-child(1), .tblone tr:nth-child(1) {
+        display: none;
+    }
+    .tblone td:nth-child(2) {
+        font-weight: bold;
+        color: purple;
+    }
+    table.tblone tr:nth-child(2n) {
+        background: rgb(255, 255, 255);
+    }
+    .m-query {
+        display: inline;
+    }
+    .separator-query {
+        display: block;
+    }
+    .cartoption {
+        margin: 0 auto;
+        text-align: center;
+    }
+    .blog_navigation {
+        height: 135vh;
+    }
+    .accept_cookie {
+        flex-direction: column;
+    }
+    .accept_button {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .card_blog {
+        width: 96%;
+        margin: 0px;
+        margin: 10px auto;
+        max-height: 550px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .login_panel input {
+        width: 90%;
+    }
+    .login_panel {
+        width: 90%;
+    }
+    .wrapper-main {
+        width: 80%;
+    }
+    #flex_container_blog {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {}

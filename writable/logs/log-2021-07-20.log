@@ -1,0 +1,34 @@
+ERROR - 2021-07-20 14:19:04 --> Unknown column 'tbl_product.publication_status' in 'where clause'
+CRITICAL - 2021-07-20 14:19:04 --> Unknown column 'tbl_product.publication_status' in 'where clause'
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Database/MySQLi/Connection.php(329): mysqli->query('SELECT *, `tb`....')
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(732): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *, `tb`....')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Database/BaseConnection.php(647): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *, `tb`....')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Database/BaseBuilder.php(1881): CodeIgniter\Database\BaseConnection->query('SELECT *, `tb`....', Array, false)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/WebModel.php(75): CodeIgniter\Database\BaseBuilder->get()
+#5 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(15): App\Models\WebModel->get_all_featured_product()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->index()
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2021-07-20 14:19:59 --> Call to undefined function format_number()
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include()
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/home', Array, true)
+#3 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(23): view('web/pages/home', Array)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->index()
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2021-07-20 15:50:09 --> Undefined variable: new
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/web/pages/home.php(77): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 77, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/home', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(25): view('web/pages/home', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->index()
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}

@@ -1,0 +1,10 @@
+admin : 
+
+- mettre enplace une fonction de promotion produit
+formulaire avec select 
+qd la promo est appliquée, png avec le logo de la promo
+
+
+laisser un avis sur la boutique
+
+

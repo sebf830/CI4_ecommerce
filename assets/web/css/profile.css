@@ -1,0 +1,229 @@
+.background {
+    background: #414045;
+    background: -moz-linear-gradient(top, #414045 55%, #2f2e33 100%);
+    background: -webkit-gradient( linear, left top, left bottom, color-stop(55%, #414045), color-stop(100%, #2f2e33));
+    background: -webkit-linear-gradient(top, #414045 55%, #2f2e33 100%);
+    background: -o-linear-gradient(top, #414045 55%, #2f2e33 100%);
+    background: -ms-linear-gradient(top, #414045 55%, #2f2e33 100%);
+    background: linear-gradient(to bottom, #414045 55%, #2f2e33 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#414045', endColorstr='#2f2e33', GradientType=0);
+    box-shadow: inset 0px 1px 8px #222;
+}
+
+.sidebar_customer {
+    width: 300px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    z-index: 100;
+    transition: width 300ms;
+}
+
+#nav-toggle:checked+.sidebar_customer {
+    width: 70px;
+}
+
+#nav-toggle:checked+.sidebar_customer .sidebar-brand, #nav-toggle:checked+.sidebar li {
+    padding-left: 1rem;
+    text-align: center;
+}
+
+#nav-toggle:checked+.sidebar_customer li a {
+    padding-left: 0rem;
+}
+
+#nav-toggle:checked+.sidebar_customer .sidebar-brand h1 span:last-child, #nav-toggle:checked+.sidebar_customer li a span:last-child {
+    display: none;
+}
+
+/*******  chat *******/
+
+.chat {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.post {
+    padding: 0 5px;
+}
+
+.chat li {
+    margin-bottom: 40px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+    width: 90%;
+}
+
+.chat li .chat-body p {
+    margin: 0;
+}
+
+.chat-care {
+    overflow-y: scroll;
+    height: 450px;
+}
+
+.chat-care .chat-img {
+    width: 50px;
+    height: 50px;
+}
+
+.chat-care .img-circle {
+    border-radius: 50%;
+}
+
+.chat-care .chat-img {
+    display: inline-block;
+}
+
+.chat-care .chat-body {
+    display: inline-block;
+    max-width: 80%;
+    background-color: #fae0fa;
+    border-radius: 12.5px;
+    padding: 15px;
+}
+
+.chat-care .chat-body strong {
+    color: #0169DA;
+}
+
+.chat-care .admin {
+    text-align: right;
+    float: right;
+}
+
+.chat-care .admin p {
+    text-align: left;
+}
+
+.chat-care .agent {
+    text-align: left;
+    float: left;
+}
+
+.chat-care .left {
+    float: left;
+}
+
+.chat-care .right {
+    float: right;
+}
+
+.clearfix {
+    clear: both;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+.form_chat {
+    width: 85%;
+    margin: -20px auto 0 auto;
+    padding: 20px;
+}
+
+.form_password {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.password {
+    width: 100px;
+}
+
+.msg_chat {
+    padding: 6px;
+}
+
+.form_chat .button {
+    background: none;
+    margin-left: 8px;
+}
+
+.card-left, .card-right {
+    background: white;
+    padding: 2% 10% 3% 10%;
+    border: 1px solid #ededed;
+}
+
+.card-right {
+    margin-top: 20px;
+}
+
+.card-left {
+    min-height: 60vh;
+}
+
+.cards_container {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2em;
+}
+
+.history-list {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+}
+
+.infos_history {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.button_history {
+    background-color: rgb(212, 106, 212);
+    color: white;
+    border-radius: 20px;
+    height: 19px;
+    width: 60px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 960px) {
+    .form_password {
+        display: flex;
+        flex-direction: column;
+    }
+    .history-list {
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .history-list img {
+        margin-bottom: 20px;
+        display: block;
+    }
+    .infos_history {
+        text-align: center;
+    }
+    .button_history {
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 560px) {}
