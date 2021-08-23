@@ -111,6 +111,10 @@ $routes->get('/admin/commandes', 'Dashboard::admin_commandes', ['filter' => 'aut
 
 //dashboard blog
 $routes->get('/admin/articles', 'Dashboard::admin_articles', ['filter' => 'auth']);
+$routes->match(['get', 'post'], '/admin/article/(:num)', 'Dashboard::admin_article/$1', ['filter' => 'auth']);
+$routes->match(['get', 'post'], '/admin/article/new', 'Dashboard::article_new', ['filter' => 'auth']);
+$routes->get('admin/article/supprimer/(:num)', 'Dashboard::delete_article/$1');
+
 
 //dashboard messagerie
 $routes->match(['get', 'post'], '/admin/messages', 'Dashboard::messageries', ['filter' => 'auth']);

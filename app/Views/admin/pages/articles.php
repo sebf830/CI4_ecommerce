@@ -5,9 +5,15 @@
 <?= $this->include('admin/inc/sidebar') ?>
 
 <div class="card" style="margin:160px auto 50px auto;width:90%;">
+    <p class="small purple-text" style="text-align:center"><?= session()->getFlashdata('article_success') ? session()->getFlashdata('article_success') : '' ?></p>
+
     <div class="card-header">
         <h2>Liste des articles blog</h2>
-        <a href="<?= base_url('admin/dashboard') ?>"><span class="fas fa-arrow-left"></span></a>
+        <div style="display:flex;flex-direction:column;text-align:right;">
+            <a href="<?= base_url('admin/dashboard') ?>"><span class="fas fa-arrow-left"></span></a>
+            <br><br>
+            <a href="<?= base_url('admin/article/new') ?>" class="purple-text"><i class="fas fa-plus"></i> Nouvel article</a>
+        </div>
     </div>
 
     <div class="card-body">

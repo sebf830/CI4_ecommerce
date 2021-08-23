@@ -94,6 +94,26 @@ class ArticleModel extends Model
 		return $data;
 	}
 
+	public function update_article($data)
+	{
+		$builder = $this->db->table('tbl_articles');
+		$builder->where('id_article', $data['id_article']);
+		$builder->set($data)->update();
+	}
+
+	public function create_article($data)
+	{
+		$builder = $this->db->table('tbl_articles');
+		$builder->set($data)->insert();
+	}
+
+	public function delete_article($id)
+	{
+		$builder = $this->db->table('tbl_articles');
+		$builder->where('id_article', $id);
+		$builder->delete();
+	}
+
 	public function search_article($search)
 	{
 		$builder = $this->db->table('tbl_articles');

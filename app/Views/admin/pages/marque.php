@@ -61,7 +61,7 @@
         </div>
         <div class=" modal-footer">
             <a href="#" class="modal-close waves-effect waves-green btn-flat">Annuler</a>
-            <a href="<?= base_url('admin/marque/supprimer/' . $brand_detail['brand_id']) ?>" class="modal-close waves-effect waves-green btn-flat">Supprimer</a>
+            <a href="<?= base_url('admin/produit/supprimer/' . $brand_detail['brand_id']) ?>" class="modal-close waves-effect waves-green btn-flat">Supprimer</a>
         </div>
     </div>
 </div>

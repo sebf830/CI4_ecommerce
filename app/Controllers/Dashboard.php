@@ -608,6 +608,163 @@ class Dashboard extends BaseController
         ]);
     }
 
+    public function article_new()
+    {
+        $data = array('title' => 'Articles');
+        $article = new ArticleModel();
+        $category = $article->getCategories();
+
+        if ($this->request->getMethod() == 'post') {
+            //upload image
+            if (in_array('upload_article', $this->request->getVar())) {
+                $file = $this->request->getFile('file');
+
+                $type = $file->getClientMimeType();
+                $valid = array("image/png", "image/jpeg", "image/jpg");
+
+                if (in_array($type, $valid)) {
+                    $name = $file->getName();
+                    $file->move('assets/web/images', $name);
+                    session()->setFlashdata('msg_success', 'Image uploadée avec succès');
+                    session()->setFlashdata('image', $name);
+                }
+            }
+
+            if (in_array('new_article', $this->request->getVar())) {
+                $values = $this->request->getVar();
+
+                $rules = [
+                    'title' => 'trim|required',
+                    'author' => 'trim|required',
+                    'categorie' => 'trim|required',
+                    'intro' => 'trim|required',
+                    'text_article' => 'trim|required'
+
+                ];
+                $message = [
+                    'title' => [
+                        'required' => 'Merci de renseigner un titre'
+                    ],
+                    'author' => [
+                        'required' => 'Merci de renseigner un nom d\'auteur'
+                    ],
+                    'categorie' => [
+                        'required' => 'Merci de renseigner une catégorie'
+                    ],
+                    'intro' => [
+                        'required' => 'Merci d\'écrire un texte d\'introduction'
+                    ],
+                    'text_article' => [
+                        'required' => 'Merci d\'écrire un article complet'
+                    ],
+                ];
+
+                $validation = \Config\Services::validation();
+
+                if (!$this->validate($rules, $message)) {
+                    return view('admin/pages/article_creer', [
+                        'validation' => $this->validator,
+                        'values' => $values,
+                        'data' => $data,
+                        'category' => $category
+
+                    ]);
+                } else {
+                    if (!session()->getFlashdata('image')) {
+                        $noImage = 'veuillez choisir une image de catégorie';
+                        return view('admin/pages/article_creer', [
+                            'data' => $data,
+                            'noImage' => $noImage,
+                            'category' => $category
+
+                        ]);
+                    } else {
+                        $values = $this->request->getVar();
+                        $insert = [
+                            'title_article' => $values['title'],
+                            'intro' => $values['intro'],
+                            'id_category' => $values['categorie'],
+                            'text_article' => $values['text_article'],
+                            'author_article' => $values['author'],
+                            'image_article1' => session()->getFlashdata('image'),
+                            'archive' => 0
+                        ];
+                        $article->create_article($insert);
+                        session()->setFlashdata('article_success', 'nouvel article crée');
+                        return redirect()->to(base_url('admin/articles'));
+                    }
+                }
+            }
+        }
+
+        return view('admin/pages/article_creer', [
+            'data' => $data,
+            'category' => $category
+        ]);
+    }
+
+    public function admin_article($id_article)
+    {
+        $data = array('title' => 'Articles');
+        $article = new ArticleModel();
+        $category = $article->getCategories();
+        $article_detail = $article->getArticleById($id_article);
+
+        if ($this->request->getMethod() == 'post') {
+            //upload image
+            if (in_array('upload_article', $this->request->getVar())) {
+                $file = $this->request->getFile('file');
+                $type = $file->getClientMimeType();
+                $valid = array("image/png", "image/jpeg", "image/jpg");
+
+                if (in_array($type, $valid)) {
+                    $name = $file->getName();
+                    $file->move('assets/web/images', $name);
+                    session()->setFlashdata('article', 'Image uploadée avec succès');
+                    session()->setFlashdata('image_article', $name);
+
+                    return view('admin/pages/article', [
+                        'data' => $data,
+                        'article_detail' => $article_detail,
+                        'category' => $category,
+                        'name' => $name
+                    ]);
+                }
+            }
+            //update infos
+            if (in_array('upload_article_infos', $this->request->getVar())) {
+                $values = $this->request->getVar();
+                $update = [
+                    'id_article' => $id_article,
+                    'title_article' => $values['title'],
+                    'intro' => $values['intro'],
+                    'id_category' => $values['categorie'],
+                    'text_article' => $values['text_article'],
+                    'author_article' => $values['author'],
+                    'image_article1' => session()->getFlashdata('image_article') ? session()->getFlashdata('image_article') : $article_detail['image_article1'],
+                    'archive' => 0
+                ];
+                $article->update_article($update);
+                session()->setFlashdata('article_success', 'Article modifié avec succès');
+                return redirect()->to(base_url('admin/articles'));
+            }
+        }
+
+        return view('admin/pages/article', [
+            'data' => $data,
+            'article_detail' => $article_detail,
+            'category' => $category
+        ]);
+    }
+
+    public function delete_article($id_article)
+    {
+        $article = new ArticleModel();
+        $article->delete_article($id_article);
+        session()->setFlashdata('article_success', 'L\'article est supprimée');
+        return redirect()->to(base_url('admin/articles'));
+    }
+
     /********************************************************************/
     /************************ ADMIN MESSAGERIE **************************/
     /********************************************************************/
