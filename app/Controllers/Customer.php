@@ -16,10 +16,7 @@ class Customer extends BaseController
 {
     public function client_login($page = 'Connexion')
     {
-
         $data = array('title' => $page);
-
-
 
         if ($this->request->getMethod() == 'post') {
             $values = $this->request->getVar();

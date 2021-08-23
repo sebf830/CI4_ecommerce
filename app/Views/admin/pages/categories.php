@@ -5,11 +5,12 @@
 <?= $this->include('admin/inc/sidebar') ?>
 
 <div class="card" style="margin:160px auto 50px auto;width:90%;">
+    <span class="purple-text"><?= session()->getFlashdata('success_category') ? session()->getFlashdata('success_category') : '' ?></span>
     <div class="card-header">
-        <h2>Liste des catégories boutique</h2>
+        <h2>Catégories boutique</h2>
+
         <a href="<?= base_url('admin/dashboard') ?>"><span class="fas fa-arrow-left"></span></a>
     </div>
-
     <div class="card-body">
         <div class="table-responsive">
             <table width="100%">
@@ -17,9 +18,8 @@
                     <tr>
                         <td>Nom</td>
                         <td>Image</td>
-                        <td>Nombre de produits</td>
                         <td>Description</td>
-                        <td></td>
+                        <td><a href="<?= base_url('admin/category/new') ?>"><i class=" fas fa-plus"></i> nouvelle catégorie</a></td>
                     </tr>
                 </thead>
                 <tbody id="result">
@@ -27,7 +27,6 @@
                         <tr>
                             <td><?= $category['category_name'] ?></td>
                             <td><img src="<?= base_url('public/uploads/' . $category['category_img']) ?>" width="30" height="30" /></td>
-                            <td><?= $category['product_id'] ?></td>
                             <td><?= word_limiter($category['category_description'], 8) ?></td>
                             <td><a href="<?= base_url('admin/category/' . $category['id']) ?>" class="btn-small purple">Voir</a></td>
                         </tr>
@@ -38,5 +37,4 @@
         </div>
     </div>
 </div>
-
 <?= $this->endSection() ?>

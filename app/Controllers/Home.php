@@ -53,6 +53,7 @@ class Home extends BaseController
 		$liked_product = $list->getWishListAllItems(session()->get('customer_id'));
 		$like = [];
 		$hasRank = $list->hasRank(session()->get('customer_id'), $id);
+
 		$avg = $list->averageRank($id);
 		$comments = $list->getComments($id);
 		$total_vote = $list->getTotalVote($id);
@@ -75,6 +76,8 @@ class Home extends BaseController
 		foreach ($liked_product as $liked) {
 			array_push($like, $liked['product_id']);
 		}
+
+
 		return view('web/pages/produit', [
 			'data' => $data,
 			'single' => $single,
@@ -89,7 +92,6 @@ class Home extends BaseController
 			'three_ranking_percent' => $three_ranking_percent,
 			'two_ranking_percent' => $two_ranking_percent,
 			'one_ranking_percent' => $one_ranking_percent
-
 		]);
 	}
 

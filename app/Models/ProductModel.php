@@ -46,23 +46,6 @@ class ProductModel extends Model
 		$data = $builder->get()->getResult('array');
 		return $data;
 	}
-	public function getProductCategory()
-	{
-		$builder = $this->db->table('tbl_category');
-		$data = $builder->get()->getResult('array');
-		return $data;
-	}
-
-	public function getCategoriesDetails()
-	{
-		$builder = $this->db->table('tbl_category');
-		$builder->selectCount('tbl_product.product_id');
-		$builder->select('tbl_category.id, tbl_category.category_name, tbl_category.category_description, tbl_category.category_img');
-		$builder->join('tbl_product', 'tbl_category.id = tbl_product.product_category');
-		$builder->groupBy('tbl_category.id');
-		$data = $builder->get()->getResultArray();
-		return $data;
-	}
 
 	public function getProductsWithDetails()
 	{

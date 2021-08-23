@@ -10,7 +10,7 @@ use App\Models\HistoryModel;
 use App\Models\AdminModel;
 use App\Models\RoleModel;
 use App\Models\ArticleModel;
-
+use App\Models\CategoryModel;
 
 
 
@@ -54,14 +54,9 @@ class Dashboard extends BaseController
         ]);
     }
 
-    public function admin_clients($page = "Clients")
-    {
-        $data = array('title' => $page);
-        $customer = new CustomerModel();
-        $getAll = $customer->getCustomers();
-
-        return view('admin/pages/clients', ['data' => $data, 'getAll' => $getAll]);
-    }
+    /*********************************************************************/
+    /******************** ADMIN PRODUITS BOUTIQUE ************************/
+    /*********************************************************************/
 
     public function admin_produits($page = "Produits")
     {
@@ -71,12 +66,16 @@ class Dashboard extends BaseController
 
         return view('admin/pages/produits', ['data' => $data, 'getAll' => $getAll]);
     }
+
     public function admin_produit($id_produit)
     {
+
         $data = array('title' => 'Produits');
         $product = new ProductModel();
+        $category = new CategoryModel();
         $data_product = $product->getProductByIdWithDetails($id_produit);
-        $categories = $product->getProductCategory();
+        $categories = $category->getProductCategory();
+
         $message = '';
 
         if ($this->request->getMethod() == 'post') {
@@ -87,7 +86,6 @@ class Dashboard extends BaseController
                 $valid = array("image/png", "image/jpeg", "image/jpg");
 
                 if (in_array($type, $valid)) {
-
                     $name = $file->getName();
                     $file->move('public/uploads', $name);
                     $product->updateImage($id_produit, $name);
@@ -118,6 +116,18 @@ class Dashboard extends BaseController
         ]);
     }
 
+    public function search_product()
+    {
+        $product = new productModel();
+        if (!empty($this->request->getVar())) {
+            $search = $this->request->getVar('value');
+            $datas_search = $product->search_products($search);
+            echo json_encode(array(
+                'result_search' => $datas_search
+            ));
+        }
+    }
+
     public function delete_produit($id)
     {
         $product = new ProductModel();
@@ -126,10 +136,40 @@ class Dashboard extends BaseController
         return redirect()->to(base_url('admin/produits'));
     }
 
+    /*********************************************************************/
+    /************************* ADMIN CLIENTS *****************************/
+    /*********************************************************************/
+
+    public function admin_clients($page = "Clients")
+    {
+        $data = array('title' => $page);
+        $customer = new CustomerModel();
+        $getAll = $customer->getCustomers();
+
+        return view('admin/pages/clients', ['data' => $data, 'getAll' => $getAll]);
+    }
+
+    public function search_user()
+    {
+        $customer = new CustomerModel();
+        if (!empty($this->request->getVar())) {
+            $search = $this->request->getVar('value');
+            $datas_search = $customer->search_users($search);
+            echo json_encode(array(
+                'result_search' => $datas_search
+            ));
+        }
+    }
+
+    /*********************************************************************/
+    /********************** ADMIN CATEGORIES *****************************/
+    /*********************************************************************/
+
+
     public function admin_categories($page = 'Catégories')
     {
         $data = array('title' => $page);
-        $product = new ProductModel();
+        $product = new CategoryModel();
         $details_category =  $product->getCategoriesDetails();
         return view('admin/pages/categories', [
             'data' => $data,
@@ -137,16 +177,158 @@ class Dashboard extends BaseController
         ]);
     }
 
-    /*******************************************************************************************************/
     public function admin_category($id_category)
     {
         $data = array('title' => 'Catégories');
-        $product = new ProductModel();
-        return view('admin/pages/categories', [
+        $category = new CategoryModel();
+        $details_category = $category->get_category_detail_byId($id_category);
+
+
+        if ($this->request->getMethod() == 'post') {
+            //upload image
+            if (in_array('upload_image', $this->request->getVar())) {
+                $file = $this->request->getFile('file');
+
+                $type = $file->getClientMimeType();
+                $valid = array("image/png", "image/jpeg", "image/jpg");
+
+                if (in_array($type, $valid)) {
+                    $name = $file->getName();
+                    $file->move('public/uploads', $name);
+                    session()->setFlashdata('msg_success', 'Image modifiée avec succès');
+                    session()->setFlashdata('image', $name);
+                }
+            }
+
+            //traitement formulaire right
+            if (in_array('edit_category', $this->request->getVar())) {
+                $values = $this->request->getVar();
+
+                $rules = [
+                    'title' => 'trim|required|min_length[2]|max_length[30]',
+                    'description' => 'trim|required|min_length[5]'
+                ];
+                $message = [
+                    'title' => [
+                        'required' => 'Merci de remplir un nom',
+                        'min_length' => 'Le titre doit comporter au moins 2 lettres',
+                        'max_length' => 'Le titre choisi est trop long'
+                    ],
+                    'description' => [
+                        'required' => 'Merci de remplir une adresse email',
+                        'min_length' => 'La description doit comporter au moins 5 caractères',
+                        'max_length' => 'La description choisi est trop long'
+                    ]
+                ];
+
+                $validation = \Config\Services::validation();
+
+                if (!$this->validate($rules, $message)) {
+                    return view('admin/pages/category_editer', ['validation' => $this->validator, 'values' => $values, 'data' => $data]);
+                } else {
+                    $name_image = session()->setFlashdata('image') ? session()->setFlashdata('image') : $details_category['category_img'];
+                    $insert_data = [
+                        'id' => $id_category,
+                        'category_name' => $values['title'],
+                        'category_description' => $values['description'],
+                        'category_img' => $name_image,
+                    ];
+                    $category = new CategoryModel();
+                    $category->update_category($insert_data);
+                    session()->setFlashdata('success_category', 'La catégorie est modifiée');
+                    return redirect()->to(base_url('admin/categories'));
+                }
+            }
+        }
+        return view('admin/pages/category_editer', [
+            'data' => $data,
+            'details_category' => $details_category
+        ]);
+    }
+
+    public function category_new($page = 'Catégories')
+    {
+        $data = array('title' => $page);
+
+        if ($this->request->getMethod() == 'post') {
+            //upload image
+            if (in_array('upload_image', $this->request->getVar())) {
+                $file = $this->request->getFile('file');
+
+                $type = $file->getClientMimeType();
+                $valid = array("image/png", "image/jpeg", "image/jpg");
+
+                if (in_array($type, $valid)) {
+                    $name = $file->getName();
+                    $file->move('public/uploads', $name);
+                    session()->setFlashdata('msg_success', 'Image uploadée avec succès');
+                    session()->setFlashdata('image', $name);
+                }
+            }
+
+            if (in_array('new_category', $this->request->getVar())) {
+                $values = $this->request->getVar();
+
+                $rules = [
+                    'title' => 'trim|required|min_length[2]|max_length[30]',
+                    'description' => 'trim|required|min_length[5]'
+                ];
+                $message = [
+                    'title' => [
+                        'required' => 'Merci de remplir un nom',
+                        'min_length' => 'Le titre doit comporter au moins 2 lettres',
+                        'max_length' => 'Le titre choisi est trop long'
+                    ],
+                    'description' => [
+                        'required' => 'Merci de remplir une adresse email',
+                        'min_length' => 'La description doit comporter au moins 5 caractères',
+                        'max_length' => 'La description choisi est trop long'
+                    ]
+                ];
+
+                $validation = \Config\Services::validation();
+
+                if (!$this->validate($rules, $message)) {
+                    return view('admin/pages/categories_creer', ['validation' => $this->validator, 'values' => $values, 'data' => $data]);
+                } else {
+                    if (!session()->getFlashdata('image')) {
+                        $noImage = 'veuillez choisir une image de catégorie';
+                        return view('admin/pages/categories_creer', [
+                            'data' => $data,
+                            'noImage' => $noImage
+                        ]);
+                    } else {
+                        $insert_data = [
+                            'category_name' => $values['title'],
+                            'category_description' => $values['description'],
+                            'category_img' => session()->getFlashdata('image'),
+                            'publication_status' => 1
+                        ];
+                        $category = new CategoryModel();
+                        $category->create_category($insert_data);
+                        session()->setFlashdata('success_category', 'La catégorie est crée');
+                        return redirect()->to(base_url('admin/categories'));
+                    }
+                }
+            }
+        }
+        return view('admin/pages/categories_creer', [
             'data' => $data,
         ]);
     }
-    /*******************************************************************************************************/
+
+    public function delete_category($id_categorie)
+    {
+        $category = new CategoryModel();
+        $category->deleteCategory($id_categorie);
+        session()->setFlashdata('success_category', 'La catégorie est supprimée');
+        return redirect()->to(base_url('admin/categories'));
+    }
+
+
+    /********************************************************************/
+    /************************* ADMIN MARQUES ****************************/
+    /********************************************************************/
 
     public function admin_marques()
     {
@@ -159,6 +341,9 @@ class Dashboard extends BaseController
         ]);
     }
 
+    /********************************************************************/
+    /************************* ADMIN ORDERS *****************************/
+    /********************************************************************/
     public function admin_commandes()
     {
         $data = array('title' => 'Commandes');
@@ -170,6 +355,10 @@ class Dashboard extends BaseController
         ]);
     }
 
+
+    /********************************************************************/
+    /********************** ADMIN BLOG ARTICLES *************************/
+    /********************************************************************/
     public function admin_articles()
     {
         $data = array('title' => 'Articles');
@@ -180,6 +369,10 @@ class Dashboard extends BaseController
             'article_details' => $article_details
         ]);
     }
+
+    /********************************************************************/
+    /************************ ADMIN MESSAGERIE **************************/
+    /********************************************************************/
 
     public function messageries($page = 'Messageries')
     {
@@ -199,28 +392,5 @@ class Dashboard extends BaseController
 
 
         return view('admin/pages/messageries', ['data' => $data, 'read_email' => $read_email]);
-    }
-
-    public function search_user()
-    {
-        $customer = new CustomerModel();
-        if (!empty($this->request->getVar())) {
-            $search = $this->request->getVar('value');
-            $datas_search = $customer->search_users($search);
-            echo json_encode(array(
-                'result_search' => $datas_search
-            ));
-        }
-    }
-    public function search_product()
-    {
-        $product = new productModel();
-        if (!empty($this->request->getVar())) {
-            $search = $this->request->getVar('value');
-            $datas_search = $product->search_products($search);
-            echo json_encode(array(
-                'result_search' => $datas_search
-            ));
-        }
     }
 }

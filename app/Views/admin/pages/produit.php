@@ -9,7 +9,7 @@
         <h2><?= $data_product['product_title'] ?></h2>
         <a href="<?= base_url('admin/produits') ?>"><span class="fas fa-home"></span></a>
     </div>
-    <span class="small purple-text"><?= session()->getFlashdata('produit', 'Image modifiée avec succès') ?></span>
+    <span class="small purple-text"><?= session()->getFlashdata('produit') ? session()->getFlashdata('produit') : '' ?></span>
 
     <div class="card-body" style="display:flex;flex-flow:row wrap; justify-content:space-between">
         <div style="width:40%; margin:0 auto; text-align:center">
@@ -97,7 +97,7 @@
         var instances = M.FormSelect.init(elems);
     });
     document.addEventListener('DOMContentLoaded', function() {
-        var elems = document.querySelectorAll('.modal');
+        var elems = document.querySelector('.modal');
         var instances = M.Modal.init(elems);
     });
 </script>

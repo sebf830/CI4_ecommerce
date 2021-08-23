@@ -99,9 +99,7 @@
      document.querySelector('.apparition_form').addEventListener('change', function() {
          document.querySelector('.form_adress').classList.add('checked');
      });
- </script>
 
- <script>
      function hide() {
          document.getElementById('masque_loader').style.display = "none";
          window.location.href = '<?= base_url('order_confirmation') ?>';

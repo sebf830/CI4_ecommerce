@@ -1,24 +1,24 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-master',
+    'version' => 'dev-master',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'e3678e247947df589d85d08be2e02115cdf8397e',
     'name' => 'codeigniter4/appstarter',
   ),
   'versions' => 
   array (
     'codeigniter4/appstarter' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-master',
+      'version' => 'dev-master',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'e3678e247947df589d85d08be2e02115cdf8397e',
     ),
     'codeigniter4/framework' => 
     array (
@@ -410,6 +410,15 @@
       array (
       ),
       'reference' => 'c6c1022351a901512170118436c764e473f6de8c',
+    ),
+    'stripe/stripe-php' => 
+    array (
+      'pretty_version' => 'v7.94.0',
+      'version' => '7.94.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '03cd6b5c1c4fc9087ddd1dd046457bff274294d6',
     ),
     'symfony/deprecation-contracts' => 
     array (

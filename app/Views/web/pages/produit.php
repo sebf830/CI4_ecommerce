@@ -181,15 +181,11 @@
 
         <div class="stats_ranking" style="width:28%;padding: 0 15px;">
             <div style="display:flex;flex-direction:column;text-align:center;justify-content:center;">
-                <h1 style="color:orange;"><?= number_format($avg['rank'], 1) ?> </h1>
+                <h1 style="color:orange;"><?= isset($avg) ?  number_format($avg['rank'], 1) : 0 ?> </h1>
                 <span id="bones_avg" style="font-size:22px"></span><br>
-                <?php if ($avg['id_ranking'] > 1) : ?>
-                    <span>(<?= $avg['id_ranking'] ?> avis publiés)</span>
-                <?php else : ?>
-                    <span>(<?= $avg['id_ranking'] ?> avis publié)</span>
-                <?php endif ?>
+                <span>(<?= $avg['id_ranking'] > 1 ? $avg['id_ranking'] : 0 ?> avis publiés)</span>
                 <br><br>
-                <?php if (count($hasRank) == 0) : ?>
+                <?php if (isset($hasRank) && count($hasRank) == 0) : ?>
                     <a href="<?= base_url('/produit/avis/' . $single['product_id']) ?>" class="button_rank btn-small purple">Laisser un avis</a>
                 <?php else :  ?>
                     <button type="button" class="button_rank btn-small purple" style="opacity:0.4">Laisser un avis</button>
@@ -197,32 +193,32 @@
                 <br><br>
                 <div style="display:flex;flex-direction:row;align-items:flex-end;">
                     <div class="bar-rating">
-                        <div class="bar-rating__active" style="width:<?= number_format($five_ranking_percent, 2)  ?>%"></div>
+                        <div class="bar-rating__active" style="width:<?= isset($four_ranking_percent) ? $four_ranking_percent : 0  ?>%"></div>
                     </div>
                     <div>5 <span><i class="fas fa-bone" style="color:orange;transform:rotate(135deg);"></i></span></div>
                 </div>
 
                 <div style="display:flex;flex-direction:row;align-items:flex-end;">
                     <div class="bar-rating">
-                        <div class="bar-rating__active" style="width:<?= $four_ranking_percent  ?>%"></div>
+                        <div class="bar-rating__active" style="width:<?= isset($four_ranking_percent) ? $four_ranking_percent : 0  ?>%"></div>
                     </div>
                     <div>4 <span><i class="fas fa-bone" style="color:orange;transform:rotate(135deg);"></i></span></div>
                 </div>
                 <div style="display:flex;flex-direction:row;align-items:flex-end;">
                     <div class="bar-rating">
-                        <div class="bar-rating__active" style="width:<?= $three_ranking_percent  ?>%"></div>
+                        <div class="bar-rating__active" style="width:<?= isset($three_ranking_percent) ? $three_ranking_percent : 0  ?>%"></div>
                     </div>
                     <div>3 <span><i class="fas fa-bone" style="color:orange;transform:rotate(135deg);"></i></span></div>
                 </div>
                 <div style="display:flex;flex-direction:row;align-items:flex-end;">
                     <div class="bar-rating">
-                        <div class="bar-rating__active" style="width:<?= $two_ranking_percent  ?>%"></div>
+                        <div class="bar-rating__active" style="width:<?= isset($two_ranking_percent) ? $two_ranking_percent : 0 ?>%"></div>
                     </div>
                     <div>2 <span><i class="fas fa-bone" style="color:orange;transform:rotate(135deg);"></i></span></div>
                 </div>
                 <div style="display:flex;flex-direction:row;align-items:flex-end;">
                     <div class="bar-rating">
-                        <div class="bar-rating__active" style="width:<?= $one_ranking_percent ?>%"></div>
+                        <div class="bar-rating__active" style="width:<?= isset($one_ranking_percent) ? $one_ranking_percent : 0 ?>%"></div>
                     </div>
                     <div>1 <span><i class="fas fa-bone" style="color:orange;transform:rotate(135deg);"></i></span></div>
                 </div>
@@ -231,25 +227,26 @@
 
         </div>
         <div class="comments_ranking" style="width:68%; ">
-            <?php foreach ($comments as $comment) : ?>
-                <div class="card_comment" style="border-bottom:1px solid #ededed;padding:30px 0">
-                    <h5><?= $comment['title_comment'] ?></h5>
-                    <span>
-                        <?php for ($i = 0; $i < $comment['rank']; $i++) : ?>
-                            <?= '<i class="fa fa-bone fa-fw" style="color:orange;transform:rotate(135deg);"></i>' ?>
-                        <?php endfor ?>
-                        <?php $black = 5 - $comment['rank'] ?>
-                        <?php for ($i = 0; $i < $black; $i++) : ?>
-                            <?= '<i class="fa fa-bone fa-fw" style="transform:rotate(135deg);"></i>' ?>
-                        <?php endfor ?>
-
-                    </span>
-                    <span> Avis vérifié</span><br>
-                    <p style="font-size:14px"><?= $comment['customer_comment'] ?></p>
-                    <br>
-                    <span style="font-size:11px">client <?= word_limiter($comment['customer_name'], 2) ?> - Avis du <?= substr($comment['created_at'], 0, 10) ?> &nbsp;<a href="#"> Signaler un abus</a></span>
-                </div>
-            <?php endforeach ?>
+            <?php if ($comments) : ?>
+                <?php foreach ($comments as $comment) : ?>
+                    <div class="card_comment" style="border-bottom:1px solid #ededed;padding:30px 0">
+                        <h5><?= $comment['title_comment'] ?></h5>
+                        <span>
+                            <?php for ($i = 0; $i < $comment['rank']; $i++) : ?>
+                                <?= '<i class="fa fa-bone fa-fw" style="color:orange;transform:rotate(135deg);"></i>' ?>
+                            <?php endfor ?>
+                            <?php $black = 5 - $comment['rank'] ?>
+                            <?php for ($i = 0; $i < $black; $i++) : ?>
+                                <?= '<i class="fa fa-bone fa-fw" style="transform:rotate(135deg);"></i>' ?>
+                            <?php endfor ?>
+                        </span>
+                        <span> Avis vérifié</span><br>
+                        <p style="font-size:14px"><?= $comment['customer_comment'] ?></p>
+                        <br>
+                        <span style="font-size:11px">client <?= word_limiter($comment['customer_name'], 2) ?> - Avis du <?= substr($comment['created_at'], 0, 10) ?> &nbsp;<a href="#"> Signaler un abus</a></span>
+                    </div>
+                <?php endforeach ?>
+            <?php endif ?>
 
         </div>
     </div>

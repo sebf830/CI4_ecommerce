@@ -32,6 +32,7 @@ class ComposerStaticInit91394964b9cdedea91632f97cc9f269f
         array (
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Svg\\' => 4,
+            'Stripe\\' => 7,
         ),
         'P' => 
         array (
@@ -93,6 +94,10 @@ class ComposerStaticInit91394964b9cdedea91632f97cc9f269f
         'Svg\\' => 
         array (
             0 => __DIR__ . '/..' . '/phenx/php-svg-lib/src/Svg',
+        ),
+        'Stripe\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/stripe/stripe-php/lib',
         ),
         'Psr\\Log\\' => 
         array (

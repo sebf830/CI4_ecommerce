@@ -6,6 +6,16 @@ namespace App\Controllers;
 class Email extends BaseController
 {
 
+
+    /************************************************/
+    /************** CONFIRM YOUR ACCOUNT *************
+     /**
+     * Envoi d'un mail de confirmation au client après inscription
+     * Le client doit cliquer sur le lien reçu par email.
+     *
+     * @param
+     */
+
     public function sendMail($name, $to, $userKey)
     {
         $from = 'sebf.dev.test@gmail.com';

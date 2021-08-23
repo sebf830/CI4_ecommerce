@@ -462,4 +462,11 @@ class App extends BaseConfig
 	 * @var boolean
 	 */
 	public $CSPEnabled = false;
+
+
+	public $psr4 = [
+		APP_NAMESPACE => APPPATH, // For custom app namespace
+		'Config'      => APPPATH . 'Config',
+		'Stripe' => ROOTPATH . 'vendor/stripe/stripe-php/init.php' // added here
+	];
 }

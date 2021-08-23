@@ -28,7 +28,7 @@
                     <?php foreach ($article_details as $article) : ?>
                         <tr>
                             <td class="grey-text"><?= $article['title_article'] ?></td>
-                            <td><img src="<?= $article['image_article1'] ?>" width='60' height='60' /></td>
+                            <td><img src="<?= base_url('assets/web/images/' . $article['image_article1']) ?>" width='60' height='60' /></td>
                             <td><?= $article['author_article'] ?></td>
                             <td><?= word_limiter($article['intro'], 8) ?></td>
                             <td><?= $article['title_category'] ?></td>
