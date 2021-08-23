@@ -6,7 +6,7 @@
 
 <div class="card" style="margin:160px auto 50px auto;width:90%;min-height:50vh">
     <div class="card-header">
-        <h2>Détail de la catégorie <?= $details_category['category_name'] ?></h2>
+        <h2> <?= ucfirst($details_category['category_name']) ?> (<?= $details_category['product_id'] ?> produits)</h2>
         <a href="<?= base_url('admin/categories') ?>"><span class="fas fa-home"></span></a>
     </div>
     <p style='text-align:center' class="purple-text"><?= session()->getFlashdata('edit_success') ?></p>

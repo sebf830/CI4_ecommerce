@@ -162,10 +162,7 @@ class ProductModel extends Model
 	public function getBrandsDetails()
 	{
 		$builder = $this->db->table('tbl_brand');
-		$builder->selectCount('tbl_product.product_id');
-		$builder->select('tbl_brand.brand_id, tbl_brand.brand_name, tbl_brand.brand_image, tbl_brand.brand_description,');
-		$builder->join('tbl_product', 'tbl_product.product_brand = tbl_brand.brand_id');
-		$builder->groupBy('tbl_brand.brand_id');
+		$builder->select('*');
 		$data = $builder->get()->getResult('array');
 		return $data;
 	}
@@ -177,6 +174,38 @@ class ProductModel extends Model
 		$data = $builder->get()->getResult('array');
 		return $data;
 	}
+
+	public function delete_brand($id)
+	{
+		$builder = $this->db->table('tbl_brand');
+		$builder->where('brand_id', $id);
+		$builder->delete();
+	}
+
+	public function get_Brand_byId($id)
+	{
+		$builder = $this->db->table('tbl_brand');
+		$builder->selectCount('tbl_product.product_id');
+		$builder->select('tbl_brand.brand_id, tbl_brand.brand_name, tbl_brand.brand_image, tbl_brand.brand_description,');
+		$builder->join('tbl_product', 'tbl_product.product_brand = tbl_brand.brand_id');
+		$builder->where('brand_id', $id);
+		$data = $builder->get()->getRowArray();
+		return $data;
+	}
+
+	public function update_brand($data)
+	{
+		$builder = $this->db->table('tbl_brand');
+		$builder->where('brand_id', $data['brand_id']);
+		$builder->set($data)->update();
+	}
+
+	public function create_marque($data)
+	{
+		$builder = $this->db->table('tbl_brand');
+		$builder->set($data)->insert();
+	}
+
 
 	public function createCustomerRanking($datas)
 	{

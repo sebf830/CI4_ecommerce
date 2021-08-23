@@ -54,6 +54,147 @@ class Dashboard extends BaseController
         ]);
     }
 
+    /********************************************************************/
+    /************************* ADMIN MARQUES ****************************/
+    /********************************************************************/
+
+    public function admin_marques()
+    {
+        $data = array('title' => 'Marques');
+        $product = new ProductModel();
+        $brand = $product->getBrandsDetails();
+        return view('admin/pages/marques', [
+            'data' => $data,
+            'brand' => $brand
+        ]);
+    }
+
+    public function admin_marque($id_marque)
+    {
+        $data = array('title' => 'Marques');
+        $brand = new ProductModel();
+        $brand_detail = $brand->get_Brand_byId($id_marque);
+
+        if ($this->request->getMethod() == 'post') {
+            //upload image
+            if (in_array('upload_marque', $this->request->getVar())) {
+                $file = $this->request->getFile('file');
+                $type = $file->getClientMimeType();
+                $valid = array("image/png", "image/jpeg", "image/jpg");
+
+                if (in_array($type, $valid)) {
+                    $name = $file->getName();
+                    $file->move('public/uploads', $name);
+                    session()->setFlashdata('marque', 'Image uploadée avec succès');
+                    session()->setFlashdata('image_brand', $name);
+
+                    return view('admin/pages/marque', [
+                        'data' => $data,
+                        'brand_detail' => $brand_detail,
+                        'name' => $name
+                    ]);
+                }
+            }
+            //update infos
+            if (in_array('upload_marque_infos', $this->request->getVar())) {
+                $values = $this->request->getVar();
+                $insert = [
+                    'brand_id' => $id_marque,
+                    'brand_name' => $values['title'],
+                    'brand_image' => session()->getFlashdata('image_brand') ? session()->getFlashdata('image_brand') : $brand_detail['brand_image'],
+                    'brand_description' => $values['description'],
+                    'publication_status' => 1
+                ];
+                $brand->update_brand($insert);
+                session()->setFlashdata('brand_success', 'Informations modifiées avec succès');
+                return redirect()->to(base_url('admin/marques'));
+            }
+        }
+        return view('admin/pages/marque', [
+            'data' => $data,
+            'brand_detail' => $brand_detail
+        ]);
+    }
+
+    public function marque_new($page = 'Marque')
+    {
+        $data = array('title' => $page);
+
+        if ($this->request->getMethod() == 'post') {
+            //upload image
+            if (in_array('upload_image', $this->request->getVar())) {
+                $file = $this->request->getFile('file');
+
+                $type = $file->getClientMimeType();
+                $valid = array("image/png", "image/jpeg", "image/jpg");
+
+                if (in_array($type, $valid)) {
+                    $name = $file->getName();
+                    $file->move('public/uploads', $name);
+                    session()->setFlashdata('msg_success', 'Image uploadée avec succès');
+                    session()->setFlashdata('image', $name);
+                }
+            }
+
+            if (in_array('marque_creer', $this->request->getVar())) {
+                $values = $this->request->getVar();
+                $rules = [
+                    'title' => 'trim|required',
+                    'description' => 'trim|required'
+                ];
+                $message = [
+                    'title' => [
+                        'required' => 'Merci de renseigner un titre'
+                    ],
+                    'description' => [
+                        'required' => 'Merci de renseigner une description'
+                    ]
+                ];
+
+                $validation = \Config\Services::validation();
+
+                if (!$this->validate($rules, $message)) {
+                    return view('admin/pages/marque_creer', [
+                        'validation' => $this->validator,
+                        'values' => $values,
+                        'data' => $data
+                    ]);
+                } else {
+                    if (!session()->getFlashdata('image')) {
+                        $noImage = 'veuillez choisir une image de catégorie';
+                        return view('admin/pages/marque_creer', [
+                            'data' => $data,
+                            'noImage' => $noImage
+                        ]);
+                    } else {
+                        $insert_data = [
+                            'brand_name' => $values['title'],
+                            'brand_description' => $values['description'],
+                            'brand_image' => session()->getFlashdata('image'),
+                            'publication_status' => 1
+                        ];
+
+                        $product = new ProductModel();
+                        $product->create_marque($insert_data);
+                        session()->setFlashdata('brand_success', 'Nouvelle marque crée');
+                        return redirect()->to(base_url('admin/marques'));
+                    }
+                }
+            }
+        }
+        return view('admin/pages/marque_creer', [
+            'data' => $data
+        ]);
+    }
+
+    public function delete_brand($id_brand)
+    {
+        $brand = new ProductModel();
+        $brand->delete_brand($id_brand);
+        session()->setFlashdata('brand_success', 'La marque est supprimée');
+        return redirect()->to(base_url('admin/marques'));
+    }
+
     /*********************************************************************/
     /******************** ADMIN PRODUITS BOUTIQUE ************************/
     /*********************************************************************/
@@ -437,20 +578,6 @@ class Dashboard extends BaseController
     }
 
 
-    /********************************************************************/
-    /************************* ADMIN MARQUES ****************************/
-    /********************************************************************/
-
-    public function admin_marques()
-    {
-        $data = array('title' => 'Marques');
-        $product = new ProductModel();
-        $brand = $product->getBrandsDetails();
-        return view('admin/pages/marques', [
-            'data' => $data,
-            'brand' => $brand
-        ]);
-    }
 
     /********************************************************************/
     /************************* ADMIN ORDERS *****************************/

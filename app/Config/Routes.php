@@ -89,18 +89,22 @@ $routes->post('search_user', 'Dashboard::search_user');
 $routes->get('/admin/produits', 'Dashboard::admin_produits', ['filter' => 'auth']);
 $routes->match(['get', 'post'], '/admin/produit/(:num)', 'Dashboard::admin_produit/$1', ['filter' => 'auth']);
 $routes->match(['get', 'post'], '/admin/produit/supprimer/(:num)', 'Dashboard::delete_produit/$1', ['filter' => 'auth']);
-$routes->get('/admin/marques', 'Dashboard::admin_marques', ['filter' => 'auth']);
 $routes->post('search_product', 'Dashboard::search_product');
 $routes->match(['get', 'post'], '/produit/avis/(:num)', 'Home::product_comment/$1', ['filter' => 'auth']);
 $routes->post('ajax_comment_datas', 'Home::ajax_comment_datas');
 $routes->match(['get', 'post'], '/admin/produit/new', 'Dashboard::produit_new', ['filter' => 'auth']);
-
 
 //dashboard categories
 $routes->get('/admin/categories', 'Dashboard::admin_categories', ['filter' => 'auth']);
 $routes->match(['get', 'post'], '/admin/category/(:num)', 'Dashboard::admin_category/$1', ['filter' => 'auth']);
 $routes->match(['get', 'post'], '/admin/category/new', 'Dashboard::category_new', ['filter' => 'auth']);
 $routes->get('admin/supprimer_categorie/(:num)', 'Dashboard::delete_category/$1');
+
+//dashboard marques
+$routes->get('/admin/marques', 'Dashboard::admin_marques', ['filter' => 'auth']);
+$routes->match(['get', 'post'], '/admin/marque/(:num)', 'Dashboard::admin_marque/$1', ['filter' => 'auth']);
+$routes->match(['get', 'post'], '/admin/marque/new', 'Dashboard::marque_new', ['filter' => 'auth']);
+$routes->get('admin/marque/supprimer/(:num)', 'Dashboard::delete_brand/$1');
 
 //dashboard orders
 $routes->get('/admin/commandes', 'Dashboard::admin_commandes', ['filter' => 'auth']);
