@@ -93,6 +93,8 @@ $routes->get('/admin/marques', 'Dashboard::admin_marques', ['filter' => 'auth'])
 $routes->post('search_product', 'Dashboard::search_product');
 $routes->match(['get', 'post'], '/produit/avis/(:num)', 'Home::product_comment/$1', ['filter' => 'auth']);
 $routes->post('ajax_comment_datas', 'Home::ajax_comment_datas');
+$routes->match(['get', 'post'], '/admin/produit/new', 'Dashboard::produit_new', ['filter' => 'auth']);
+
 
 //dashboard categories
 $routes->get('/admin/categories', 'Dashboard::admin_categories', ['filter' => 'auth']);

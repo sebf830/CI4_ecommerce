@@ -5,10 +5,15 @@
 <?= $this->include('admin/inc/sidebar') ?>
 
 <div class="card" style="margin:160px auto 50px auto;width:90%;">
+    <p class="purple-text" style='text-align:center'><?= session()->getFlashdata('success_category') ? session()->getFlashdata('success_category') : '' ?></p>
     <div class="card-header">
         <h2>Liste des produits</h2>
         <input id="search_product" type="text" class="inputSearch" placeholder="Rechercher un produit" style="padding:2px 5px;border:1px solid lightgrey;height:30px;border-radius:20px;margin-top:9px;width:20em" />
-        <a href="<?= base_url('admin/dashboard') ?>"><span class="fas fa-arrow-left"></span></a>
+        <div style="display:flex;flex-direction:column;text-align:right;">
+            <a href="<?= base_url('admin/dashboard') ?>"><span class="fas fa-arrow-left"></span></a>
+            <br><br>
+            <a href="<?= base_url('admin/produit/new') ?>"><i class=" fas fa-plus"></i> Nouveau produit</a>
+        </div>
     </div>
 
     <div class="card-body">

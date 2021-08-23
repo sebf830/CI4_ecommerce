@@ -146,6 +146,12 @@ class ProductModel extends Model
 		$builder->where('product_id', $id_produit);
 		$builder->set($datas)->update();
 	}
+
+	public function create_product($data)
+	{
+		$builder = $this->db->table('tbl_product');
+		$builder->set($data)->insert();
+	}
 	public function deleteProduct($id_produit)
 	{
 		$builder = $this->db->table('tbl_product');
@@ -160,6 +166,14 @@ class ProductModel extends Model
 		$builder->select('tbl_brand.brand_id, tbl_brand.brand_name, tbl_brand.brand_image, tbl_brand.brand_description,');
 		$builder->join('tbl_product', 'tbl_product.product_brand = tbl_brand.brand_id');
 		$builder->groupBy('tbl_brand.brand_id');
+		$data = $builder->get()->getResult('array');
+		return $data;
+	}
+
+	public function getAllBrands()
+	{
+		$builder = $this->db->table('tbl_brand');
+		$builder->select('*');
 		$data = $builder->get()->getResult('array');
 		return $data;
 	}

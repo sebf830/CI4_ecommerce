@@ -73,8 +73,8 @@ class Dashboard extends BaseController
         $data = array('title' => 'Produits');
         $product = new ProductModel();
         $category = new CategoryModel();
-        $data_product = $product->getProductByIdWithDetails($id_produit);
         $categories = $category->getProductCategory();
+        $data_product = $product->getProductByIdWithDetails($id_produit);
 
         $message = '';
 
@@ -134,6 +134,117 @@ class Dashboard extends BaseController
         $product->deleteProduct($id);
         session()->setFlashdata('produit_suppression', 'Le produit est supprimé');
         return redirect()->to(base_url('admin/produits'));
+    }
+
+    public function produit_new($page = 'Produit')
+    {
+        $data = array('title' => $page);
+        $category = new CategoryModel();
+        $brands = new ProductModel();
+        $all_brands = $brands->getAllBrands();
+        $categories = $category->getProductCategory();
+
+        if ($this->request->getMethod() == 'post') {
+            //upload image
+            if (in_array('upload_image', $this->request->getVar())) {
+                $file = $this->request->getFile('file');
+
+                $type = $file->getClientMimeType();
+                $valid = array("image/png", "image/jpeg", "image/jpg");
+
+                if (in_array($type, $valid)) {
+                    $name = $file->getName();
+                    $file->move('public/uploads', $name);
+                    session()->setFlashdata('msg_success', 'Image uploadée avec succès');
+                    session()->setFlashdata('image', $name);
+                }
+            }
+
+            if (in_array('creer_produit', $this->request->getVar())) {
+                $values = $this->request->getVar();
+
+                $rules = [
+                    'title' => 'trim|required',
+                    'price' => 'trim|required',
+                    'marque' => 'trim|required',
+                    'stock' => 'trim|required',
+                    'categorie' => 'trim|required',
+                    'short_description' => 'trim|required',
+                    'long_description' => 'trim|required'
+                ];
+                $message = [
+                    'title' => [
+                        'required' => 'Merci de remplir un titre'
+                    ],
+                    'price' => [
+                        'required' => 'Merci de remplir un prix'
+                    ],
+                    'marque' => [
+                        'required' => 'Merci de remplir une marque'
+                    ],
+                    'stock' => [
+                        'required' => 'Merci de remplir une quantité de stock'
+                    ],
+                    'categorie' => [
+                        'required' => 'Merci de remplir une catégorie'
+                    ],
+                    'short_description' => [
+                        'required' => 'Merci de remplir un résumé'
+                    ],
+                    'long_description' => [
+                        'required' => 'Merci de remplir une description'
+                    ],
+                ];
+
+                $validation = \Config\Services::validation();
+
+                if (!$this->validate($rules, $message)) {
+                    return view('admin/pages/produit_creer', [
+                        'validation' => $this->validator,
+                        'values' => $values,
+                        'data' => $data,
+                        'categories' => $categories,
+                        'all_brands' => $all_brands
+                    ]);
+                } else {
+                    if (!session()->getFlashdata('image')) {
+                        $noImage = 'veuillez choisir une image de catégorie';
+                        return view('admin/pages/produit_creer', [
+                            'data' => $data,
+                            'noImage' => $noImage,
+                            'categories' => $categories,
+                            'all_brands' => $all_brands
+
+
+                        ]);
+                    } else {
+                        $insert_data = [
+                            'product_title' => $values['title'],
+                            'short_description' => $values['short_description'],
+                            'long_description' => $values['long_description'],
+                            'product_image' => session()->getFlashdata('image'),
+                            'product_price' => $values['price'],
+                            'product_quantity' => $values['stock'],
+                            'product_category' => $values['categorie'],
+                            'product_brand' => $values['marque'],
+                            'publication_status' => 1
+                        ];
+
+                        $product = new ProductModel();
+                        $product->create_product($insert_data);
+                        session()->setFlashdata('success_category', 'Le produit est crée');
+                        return redirect()->to(base_url('admin/produits'));
+                    }
+                }
+            }
+        }
+
+        return view('admin/pages/produit_creer', [
+            'data' => $data,
+            'categories' => $categories,
+            'all_brands' => $all_brands
+
+        ]);
     }
 
     /*********************************************************************/

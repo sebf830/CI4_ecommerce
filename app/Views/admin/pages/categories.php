@@ -5,7 +5,7 @@
 <?= $this->include('admin/inc/sidebar') ?>
 
 <div class="card" style="margin:160px auto 50px auto;width:90%;">
-    <span class="purple-text"><?= session()->getFlashdata('success_category') ? session()->getFlashdata('success_category') : '' ?></span>
+    <span class="purple-text" style='text-align:center'><?= session()->getFlashdata('success_category') ? session()->getFlashdata('success_category') : '' ?></span>
     <div class="card-header">
         <h2>Catégories boutique</h2>
 
@@ -19,7 +19,7 @@
                         <td>Nom</td>
                         <td>Image</td>
                         <td>Description</td>
-                        <td><a href="<?= base_url('admin/category/new') ?>"><i class=" fas fa-plus"></i> nouvelle catégorie</a></td>
+                        <td><a href="<?= base_url('admin/category/new') ?>"><i class=" fas fa-plus"></i> Nouvelle catégorie</a></td>
                     </tr>
                 </thead>
                 <tbody id="result">

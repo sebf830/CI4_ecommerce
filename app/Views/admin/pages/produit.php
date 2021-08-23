@@ -9,7 +9,7 @@
         <h2><?= $data_product['product_title'] ?></h2>
         <a href="<?= base_url('admin/produits') ?>"><span class="fas fa-home"></span></a>
     </div>
-    <span class="small purple-text"><?= session()->getFlashdata('produit') ? session()->getFlashdata('produit') : '' ?></span>
+    <p class="small purple-text" style="text-align:center"><?= session()->getFlashdata('produit') ? session()->getFlashdata('produit') : '' ?></p>
 
     <div class="card-body" style="display:flex;flex-flow:row wrap; justify-content:space-between">
         <div style="width:40%; margin:0 auto; text-align:center">
