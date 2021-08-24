@@ -1,13 +1,13 @@
 <?= $this->extend('web/layouts/main_layout') ?>
 
 <?= $this->section('body-contents') ?>
-<div class="wrapper_search">
+<div class="wrapper_search" style="padding-top:10px">
     <div class="content">
         <div class="content_top">
 
         </div>
 
-        <h3 class="titre_section_home">Résultats concernant : <?= $value ?></h3>
+        <h3 class="titre_section_home">Résultats concernant : '<?= $value ?>'</h3>
 
     </div>
     <div class="card_section_home">

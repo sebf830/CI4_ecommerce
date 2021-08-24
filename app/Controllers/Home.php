@@ -244,11 +244,7 @@ class Home extends BaseController
 		return view('web/pages/contact', ['data' => $data, 'options_contact' => $options_contact]);
 	}
 
-	public function error($page = 'erreur')
-	{
-		$data = array('title' => $page);
-		return view('web/pages/erreur', ['data' => $data]);
-	}
+
 
 
 	public function search($page = 'Recherche')

@@ -127,8 +127,12 @@ $routes->get('validation/(:any)', 'Customer::active_account/$1');
 //RGPD
 $routes->post('accept_cookie', 'Home::ajax_accept_cookie');
 
-//erreur
-$routes->get('/erreur', 'Home::/error');
+//erreur recherche
+$routes->get('/erreur', 'Errors::error');
+//erreur 404
+$routes->set404Override(function () {
+	return view('web/pages/404');
+});
 
 //tools accessible via CLI uniquement
 $routes->cli('tools/message/(:segment)', 'Tools::message/$1');
