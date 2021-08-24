@@ -9,7 +9,7 @@
                  <div class="imgCardHome">
                      <a href="<?= base_url('categorie/' . $category['id']) ?>">
                          <img style="width:300px;height:250px" src="<?= base_url('public/uploads/' . $category['category_img']) ?>" alt="" />
-                         <?= $category['category_name'] ?>
+                         <span class="purple-text"><?= $category['category_name'] ?></span>
                      </a>
                  </div>
 

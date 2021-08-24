@@ -48,11 +48,10 @@
             <button type="button" class='btn-small purple' id='submit_comment'>Valider</button>
         </div>
 
+
         <script>
             var bone = document.querySelectorAll('.star-label')
             var rank_value = document.querySelector('#rank_value')
-
-
 
             bone.forEach(item => {
                 item.addEventListener('click', checkedClicked)
@@ -67,6 +66,7 @@
                 $('#text_rank').html('Merci! Votre évaluation est <span style="font-size:20px;">' + dataRank + '</span>/5');
 
                 $(document).on('click', '#submit_comment', function() {
+                    $('#submit_comment').addClass("disabled");
                     $.ajax({
                         url: '<?= base_url('ajax_comment_datas') ?>',
                         type: 'POST',

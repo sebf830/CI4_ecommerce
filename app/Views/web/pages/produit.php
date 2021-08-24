@@ -101,23 +101,23 @@
                 <h2>Description : </h2>
                 <p><?= $single['long_description'] ?></p>
                 <ul>
-                    <li>Marque: <span><?= $single['brand_name'] ?></span></li>
-                    <li>Quantité en stock : <span><?= $single['product_quantity'] ?></span></li>
-                    <li>Category: <span><?= $single['category_name'] ?></span></li>
-                    <li>Livraison: <span>Europe</span></li>
-                    <li>Frais de port: <span>Gratuit</span></li>
+                    <li><span class='check'><i class="fas fa-check-circle"></i></span> Marque: <span><?= $single['brand_name'] ?></span></li>
+                    <li><span class='check'><i class="fas fa-check-circle"></i></span> Quantité en stock : <span><?= $single['product_quantity'] ?></span></li>
+                    <li><span class='check'><i class="fas fa-check-circle"></i></span> Category: <span><?= $single['category_name'] ?></span></li>
+                    <li><span class='check'><i class="fas fa-check-circle"></i></span> Livraison: <span>Europe</span></li>
+                    <li><span class='check'><i class="fas fa-check-circle"></i></span> Frais de port: <span>Gratuit</span></li>
                 </ul>
             </div>
 
             <?php if ($single['product_quantity'] == 0) : ?>
                 <div class="purchase-info">
-                    <button type="button" class="btn-disabled">
+                    <button type="button" class="btn-disabled purple">
                         Ajouter au panier<i class="fas fa-shopping-cart"></i>
                     </button>
                 </div>
             <?php else : ?>
                 <div class="purchase-info">
-                    <a href="<?= base_url('panier/ajouter/' . $single['product_id']) ?>" class="btn">
+                    <a href="<?= base_url('panier/ajouter/' . $single['product_id']) ?>" class="btn purple">
                         Ajouter au panier <i class="fas fa-shopping-cart"></i>
                     </a>
 

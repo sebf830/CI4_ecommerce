@@ -62,15 +62,15 @@ class WebModel extends Model
 		return $slides;
 	}
 
-	public function get_all_featured_product()
+	public function get_food_product()
 	{
 		$builder = $this->db->table('tbl_product as tb');
 		$builder->select('*,tb.publication_status as pstatus');
 		$builder->join('tbl_category as tc', 'tc.id = tb.product_category');
 		$builder->join('tbl_brand as tbr', 'tbr.brand_id = tb.product_brand');
 		$builder->orderBy('tb.product_id', 'DESC');
-		$builder->where('tb.publication_status', 1);
-		$builder->where('product_feature', 1);
+		$builder->where('tc.id', 1);
+		$builder->orWhere('tc.id', 8);
 		$builder->limit(4);
 		$products = $builder->get()->getResult('array');
 		return $products;
@@ -83,11 +83,23 @@ class WebModel extends Model
 		$builder->join('tbl_category as tc', 'tc.id = tb.product_category');
 		$builder->join('tbl_brand as tbr', 'tbr.brand_id = tb.product_brand');
 		$builder->orderBy('tb.product_id', 'DESC');
-		$builder->where('tb.publication_status', 1);
 		$builder->limit(4);
-		$products = $builder->get()->getResult('array');;
+		$products = $builder->get()->getResult('array');
 		return $products;
 	}
+
+	public function get_best_ranking_product()
+	{
+		$builder = $this->db->table('tbl_product as tb');
+		$builder->select('*');
+		$builder->join('tbl_product_rank as tpr', 'tpr.product_id = tb.product_id');
+		$builder->where('tpr.rank', '5');
+		$builder->orderBy('tpr.id_ranking', 'DESC');
+		$builder->limit(4);
+		$products = $builder->get()->getResultArray();
+		return $products;
+	}
+
 
 	public function getProductById($id)
 	{

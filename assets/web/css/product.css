@@ -141,6 +141,10 @@
     padding-bottom: 0.6rem;
 }
 
+.product-detail .check {
+    color: purple;
+}
+
 .product-detail p {
     font-size: 0.9rem;
     padding: 0.3rem;
@@ -155,7 +159,6 @@
 .product-detail ul li {
     margin: 0;
     list-style: none;
-    background: url(https://fadzrinmadu.github.io/hosted-assets/product-detail-page-design-with-image-slider-html-css-and-javascript/checked.png) left center no-repeat;
     background-size: 18px;
     padding-left: 1.7rem;
     margin: 0.4rem 0;

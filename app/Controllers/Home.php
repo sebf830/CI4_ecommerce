@@ -14,10 +14,10 @@ class Home extends BaseController
 		$product = new WebModel();
 		$popular_products = $product->get_popular_products();
 		$slider_products = $product->get_slider_products();
-		$feature_product = $product->get_all_featured_product();
+
+		$feature_product = $product->get_food_product();
 		$new_products = $product->get_all_new_product();
-
-
+		$best_rank_product = $product->get_best_ranking_product();
 		return view(
 			'web/pages/home',
 			[
@@ -26,6 +26,7 @@ class Home extends BaseController
 				'data' => $data,
 				'featured' => $feature_product,
 				'news_products' => $new_products,
+				'best_rank_product' => $best_rank_product,
 			]
 		);
 	}
@@ -128,7 +129,7 @@ class Home extends BaseController
 		if (session()->get('customer_id')) {
 			return view('web/pages/product_comment', [
 				'data' => $data,
-				'single' => $single,
+				'single' => $single
 			]);
 		} else {
 			return redirect()->to(base_url('client/connexion'));
@@ -146,11 +147,11 @@ class Home extends BaseController
 		];
 		$product = new ProductModel();
 
-		if ($hasRank = $product->createCustomerRanking($insert)) {
-			echo json_encode(array('msg' => 'Votre commentaire est bien pris en compte'));
-		} else {
-			echo json_encode(array('msg' => 'Vous avez déja noté ce produit <a href="#" onclick="window.history.go(-1)">retour</a>'));
-		}
+		$hasRank = $product->createCustomerRanking($insert);
+		echo json_encode(array('msg' => 'Votre commentaire est bien pris en compte  <a href="#" onclick="window.history.go(-1)">retour</a>'));
+
+		// echo json_encode(array('msg' => 'Vous avez déja noté ce produit <a href="#" onclick="window.history.go(-1)">retour</a>'));
+
 	}
 
 	public function ajax_wishlist()

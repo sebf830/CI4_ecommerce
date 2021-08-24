@@ -41,11 +41,19 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
       <!--- fin produits a la une --->
 
+      <div class="banner1" style="text-align:center;position:relative;">
+          <a href="#" target="blank">
+              <img style="" src="<?= base_url('assets/web/images/friday.png') ?>" alt="banner_ouaf" height="180">
+          </a>
+          <label id="Compte" style="position:absolute;top:120px;right:15em;font-size:22px;font-weight:bold" class="purple-text"></label>
+      </div>
+
+
       <!--- debut contenu principal ---->
       <div class="content">
           <div class="content_top">
               <div class="heading">
-                  <h3 class="titre_section_home">LES PLUS CONSULTÉS</h3>
+                  <h3 class="titre_section_home">NOTRE SÉLÉCTION FOOD</h3>
               </div>
           </div>
           <div class="card_section_home">
@@ -72,7 +80,7 @@
           <!--- section nouveaux produits --->
           <div class="content_bottom">
               <div class="heading">
-                  <h3 class="titre_section_home">LES NOUVEATUTÉS</h3>
+                  <h3 class="titre_section_home">LES NOUVEAUTÉS</h3>
               </div>
           </div>
           <div class="card_section_home">
@@ -94,6 +102,39 @@
                   <!---- fin de card nouveautés ----->
               <?php endforeach ?>
           </div>
+          <br>
+          <div class="banner2" style="text-align:center;">
+              <a href="http://www.assurance-mutuelle-chien.fr/animaux-sante/" target="blank">
+                  <img style="border:1px solid lightgrey" src="<?= base_url('assets/web/images/ouaf.png') ?>" alt="banner_ouaf" height="180">
+              </a>
+          </div>
+          <!-------- Début section les mieux notés ---->
+          <div class="content_bottom">
+              <div class="heading">
+                  <h3 class="titre_section_home">LES MIEUX NOTÉS</h3>
+              </div>
+          </div>
+          <div class="card_section_home">
+              <?php foreach ($best_rank_product as $new) : ?>
+                  <!--- card mieux notés---->
+                  <div class="card_home">
+                      <div class="imgCardHome">
+                          <a href="produit/<?= $new['product_id'] ?>">
+                              <img style="width:250px;height:250px" src="<?= base_url('public/uploads/' . $new['product_image']) ?>" alt="" />
+                          </a>
+                      </div>
+                      <div class="texteCardHome">
+                          <h3><?= $new['product_title'] ?></h3>
+                          <p class="desc"><?= word_limiter($new['short_description'], 10) ?></p>
+                          <p class="price"><?= number_format($new['product_price'], 2); ?>€</p>
+                          <a class="buttonHomeCard" href="produit/<?= $new['product_id'] ?>">détails</a>
+                      </div>
+                  </div>
+                  <!---- fin de card mieux notés ----->
+              <?php endforeach ?>
+          </div>
+          <br>
+
       </div>
   </div>
 
@@ -110,6 +151,27 @@
           });
 
       });
+
+
+      var Affiche = document.getElementById("Compte");
+
+      function Rebour() {
+          var date1 = new Date();
+          var date2 = new Date("Aug 25, 2021 00:00:00");
+          var sec = (date2 - date1) / 1000;
+          var n = 24 * 3600;
+          if (sec > 0) {
+              j = Math.floor(sec / n);
+              h = Math.floor((sec - (j * n)) / 3600);
+              mn = Math.floor((sec - ((j * n + h * 3600))) / 60);
+              sec = Math.floor(sec - ((j * n + h * 3600 + mn * 60)));
+              Affiche.innerHTML = j + ' j &nbsp;' + h + "  h  " + mn + "  mn  " + sec + "s";
+              window.status = "Temps restant : "
+              h + " h " + mn + " min " + sec + " s ";
+          }
+          tRebour = setTimeout("Rebour();", 1000);
+      }
+      Rebour();
   </script>
 
   <!--- fin de contenu ---->
