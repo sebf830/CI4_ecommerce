@@ -231,7 +231,7 @@
 
         </div>
         <div class="comments_ranking" style="width:68%; ">
-            <?php if (isset($comments)) : ?>
+            <?php if (!empty($comments)) : ?>
                 <?php foreach ($comments as $comment) : ?>
                     <div class="card_comment" style="border-bottom:1px solid #ededed;padding:30px 0">
                         <h5><?= $comment['title_comment'] ?></h5>
@@ -250,6 +250,8 @@
                         <span style="font-size:11px">client <?= word_limiter($comment['customer_name'], 2) ?> - Avis du <?= substr($comment['created_at'], 0, 10) ?> &nbsp;<a href="#"> Signaler un abus</a></span>
                     </div>
                 <?php endforeach ?>
+            <?php else : ?>
+                <p style="text-align:center">Soyez le premier à laisser un commentaire pour ce produit</p>
             <?php endif ?>
         </div>
     </div>
