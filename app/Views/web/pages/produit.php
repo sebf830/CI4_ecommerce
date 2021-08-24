@@ -181,11 +181,15 @@
 
         <div class="stats_ranking" style="width:28%;padding: 0 15px;">
             <div style="display:flex;flex-direction:column;text-align:center;justify-content:center;">
-                <h1 style="color:orange;"><?= isset($avg) ?  number_format($avg['rank'], 1) : 0 ?> </h1>
+                <h1 style="color:orange;"><?= isset($avg['rank']) ?  number_format($avg['rank'], 1) : 0 ?> </h1>
                 <span id="bones_avg" style="font-size:22px"></span><br>
-                <span>(<?= $avg['id_ranking'] > 1 ? $avg['id_ranking'] : 0 ?> avis publiés)</span>
+                <?php if ($avg['id_ranking'] > 0) : ?>
+                    <span>(<?= $avg['id_ranking'] ?> avis publiés)</span>
+                <?php else : ?>
+                    <span>(0 avis publié)</span>
+                <?php endif ?>
                 <br><br>
-                <?php if (isset($hasRank) && count($hasRank) == 0) : ?>
+                <?php if (count($hasRank) == 0) : ?>
                     <a href="<?= base_url('/produit/avis/' . $single['product_id']) ?>" class="button_rank btn-small purple">Laisser un avis</a>
                 <?php else :  ?>
                     <button type="button" class="button_rank btn-small purple" style="opacity:0.4">Laisser un avis</button>
@@ -193,7 +197,7 @@
                 <br><br>
                 <div style="display:flex;flex-direction:row;align-items:flex-end;">
                     <div class="bar-rating">
-                        <div class="bar-rating__active" style="width:<?= isset($four_ranking_percent) ? $four_ranking_percent : 0  ?>%"></div>
+                        <div class="bar-rating__active" style="width:<?= isset($five_ranking_percent) ? $five_ranking_percent : 0  ?>%"></div>
                     </div>
                     <div>5 <span><i class="fas fa-bone" style="color:orange;transform:rotate(135deg);"></i></span></div>
                 </div>
@@ -227,7 +231,7 @@
 
         </div>
         <div class="comments_ranking" style="width:68%; ">
-            <?php if ($comments) : ?>
+            <?php if (isset($comments)) : ?>
                 <?php foreach ($comments as $comment) : ?>
                     <div class="card_comment" style="border-bottom:1px solid #ededed;padding:30px 0">
                         <h5><?= $comment['title_comment'] ?></h5>
@@ -247,7 +251,6 @@
                     </div>
                 <?php endforeach ?>
             <?php endif ?>
-
         </div>
     </div>
 

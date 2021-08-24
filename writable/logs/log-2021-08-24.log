@@ -283,3 +283,1068 @@ Stack trace:
   thrown
 #0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
 #1 {main}
+CRITICAL - 2021-08-24 06:29:44 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(62): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 06:29:44 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 06:50:40 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(62): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 06:50:40 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:03:53 --> Undefined variable: avg
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Views/web/pages/produit.php(64): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 64, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(230): include('/Applications/M...')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/View/View.php(232): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Common.php(1271): CodeIgniter\View\View->render('web/pages/produ...', Array, true)
+#4 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(98): view('web/pages/produ...', Array)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#6 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2021-08-24 07:03:53 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:06:32 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:06:32 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:07:16 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:07:16 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:08:06 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:08:06 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:09:08 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:09:08 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:10:12 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:10:12 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:10:48 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:10:48 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:11:07 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:11:07 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:11:08 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:11:08 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:11:23 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:11:23 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:11:30 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:11:30 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:11:39 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:11:39 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:12:14 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:12:14 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:13:13 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:13:13 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:14:40 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:14:40 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:15:37 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:15:37 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:16:04 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:16:04 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:16:04 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:16:04 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:16:04 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:16:04 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:16:05 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:16:05 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:16:05 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:16:05 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:17:30 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:17:30 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:17:50 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:17:50 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:18:01 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:18:01 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:18:10 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:18:10 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:18:37 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(74): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:18:37 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:20:20 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(75): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:20:20 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:21:07 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(75): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:21:07 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:21:53 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(75): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:21:53 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:22:09 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(75): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:22:09 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:22:34 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(75): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:22:34 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:22:36 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(75): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:22:36 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:22:56 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(75): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:22:56 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:23:51 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(78): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:23:51 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:24:08 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(78): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:24:08 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:27:52 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:27:52 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:29:10 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:29:10 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:30:44 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:30:44 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:31:20 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:31:20 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:31:42 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:31:42 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:32:17 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:32:17 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:32:18 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:32:18 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:32:45 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:32:45 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:32:46 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:32:46 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:32:46 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:32:46 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:32:46 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:32:46 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:32:47 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:32:47 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:32:47 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(280): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 280, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:32:47 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:33:24 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:33:24 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:33:25 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:33:25 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:33:25 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:33:25 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:33:25 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:33:25 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:33:25 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:33:25 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:33:26 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:33:26 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:33:26 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:33:26 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:33:26 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:33:26 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}
+CRITICAL - 2021-08-24 07:33:26 --> Division by zero
+#0 /Applications/MAMP/htdocs/CI/venus-shop/app/Models/ProductModel.php(275): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Division by zer...', '/Applications/M...', 275, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/app/Controllers/Home.php(80): App\Models\ProductModel->getRankPercentByProduct('0', '0')
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(928): App\Controllers\Home->produit('20')
+#3 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(436): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#4 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/CodeIgniter.php(336): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#5 /Applications/MAMP/htdocs/CI/venus-shop/index.php(37): CodeIgniter\CodeIgniter->run()
+#6 {main}
+CRITICAL - 2021-08-24 07:33:26 --> Uncaught ErrorException: Undefined variable: viewFile in /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php:278
+Stack trace:
+#0 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined varia...', '/Applications/M...', 278, Array)
+#1 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(278): include()
+#2 /Applications/MAMP/htdocs/CI/venus-shop/vendor/codeigniter4/framework/system/Debug/Exceptions.php(147): CodeIgniter\Debug\Exceptions->render(Object(ErrorException), 500)
+#3 [internal function]: CodeIgniter\Debug\Exceptions->exceptionHandler(Object(ErrorException))
+#4 {main}
+  thrown
+#0 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+#1 {main}

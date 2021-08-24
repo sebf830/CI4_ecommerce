@@ -47,52 +47,76 @@ class Home extends BaseController
 		$data  = array('title' => 'Produits');
 		$product = new WebModel();
 		$list = new ProductModel();
-		$all_products = $list->getProducts();
+
+		//datas du produit séléctionné
 		$single = $product->getProductById($id);
+		//affichage liens catégories
 		$categories  = $product->getAllCategory();
+		//produits slider suggestions
+		$all_products = $list->getProducts();
+		//on récupère la wishlist
 		$liked_product = $list->getWishListAllItems(session()->get('customer_id'));
 		$like = [];
-		$hasRank = $list->hasRank(session()->get('customer_id'), $id);
 
-		$avg = $list->averageRank($id);
-		$comments = $list->getComments($id);
-		$total_vote = $list->getTotalVote($id);
-
-		$five = $list->getEvaluationsByRank(5, $id);
-		$five_ranking_percent = $list->getRankPercentByProduct($five['id_ranking'], $total_vote['id_ranking']);
-
-		$four = $list->getEvaluationsByRank(4, $id);
-		$four_ranking_percent = $list->getRankPercentByProduct($four['id_ranking'], $total_vote['id_ranking']);
-
-		$three = $list->getEvaluationsByRank(3, $id);
-		$three_ranking_percent = $list->getRankPercentByProduct($three['id_ranking'], $total_vote['id_ranking']);
-
-		$two = $list->getEvaluationsByRank(2, $id);
-		$two_ranking_percent = $list->getRankPercentByProduct($two['id_ranking'], $total_vote['id_ranking']);
-
-		$one = $list->getEvaluationsByRank(1, $id);
-		$one_ranking_percent = $list->getRankPercentByProduct($one['id_ranking'], $total_vote['id_ranking']);
-
+		//on crée un tableau des produit favoris du client...
+		//..pour verifier si le produit déja dans les favoris
 		foreach ($liked_product as $liked) {
 			array_push($like, $liked['product_id']);
 		}
+		//liste des produits déja évalués par le client
+		$hasRank = $list->hasRank(session()->get('customer_id'), $id);
+
+		//on recupère l'évaluation du produit
+		$avg = $list->averageRank($id);
+		if ($avg['rank']) {
+			//on récupère les commentaires du produit
+			$comments = $list->getComments($id);
+			// //on récupère le nombre d'évaluation du produit
+			$total_vote = $list->getTotalVote($id);
+			//on compte les votes 5 étoiles
+			$five = $list->getEvaluationsByRank(5, $id);
+			//on traduit les votes 5 etoiles en pourcentage du total de vote
+			$five_ranking_percent = $list->getRankPercentByProduct($five['id_ranking'], $total_vote['id_ranking']);
+			//on compte les votes 4 étoiles
+			$four = $list->getEvaluationsByRank(4, $id);
+			//on traduit les votes 4 etoiles en pourcentage du total de vote...
+			$four_ranking_percent = $list->getRankPercentByProduct($four['id_ranking'], $total_vote['id_ranking']);
+			//and so on..
+			$three = $list->getEvaluationsByRank(3, $id);
+			$three_ranking_percent = $list->getRankPercentByProduct($three['id_ranking'], $total_vote['id_ranking']);
+			$two = $list->getEvaluationsByRank(2, $id);
+			$two_ranking_percent = $list->getRankPercentByProduct($two['id_ranking'], $total_vote['id_ranking']);
+			$one = $list->getEvaluationsByRank(1, $id);
+			$one_ranking_percent = $list->getRankPercentByProduct($one['id_ranking'], $total_vote['id_ranking']);
 
 
-		return view('web/pages/produit', [
-			'data' => $data,
-			'single' => $single,
-			'categories' => $categories,
-			'like' => $like,
-			'all_products' => $all_products,
-			'hasRank' => $hasRank,
-			'avg' => $avg,
-			'comments' => $comments,
-			'five_ranking_percent' => $five_ranking_percent,
-			'four_ranking_percent' => $four_ranking_percent,
-			'three_ranking_percent' => $three_ranking_percent,
-			'two_ranking_percent' => $two_ranking_percent,
-			'one_ranking_percent' => $one_ranking_percent
-		]);
+
+			return view('web/pages/produit', [
+				'data' => $data,
+				'single' => $single,
+				'categories' => $categories,
+				'like' => $like,
+				'all_products' => $all_products,
+				'hasRank' => $hasRank,
+				'avg' => $avg,
+				'comments' => $comments,
+				'five_ranking_percent' => $five_ranking_percent,
+				'four_ranking_percent' => $four_ranking_percent,
+				'three_ranking_percent' => $three_ranking_percent,
+				'two_ranking_percent' => $two_ranking_percent,
+				'one_ranking_percent' => $one_ranking_percent
+			]);
+		} else {
+			return view('web/pages/produit', [
+				'data' => $data,
+				'single' => $single,
+				'categories' => $categories,
+				'like' => $like,
+				'all_products' => $all_products,
+				'hasRank' => $hasRank,
+				'avg' => $avg
+			]);
+		}
 	}
 
 	public function product_comment($id_produit)
