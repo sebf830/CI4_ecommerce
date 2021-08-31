@@ -132,7 +132,7 @@ class Home extends BaseController
 				'single' => $single
 			]);
 		} else {
-			return redirect()->to(base_url('client/connexion'));
+			return redirect()->to(base_url('connexion'));
 		}
 	}
 

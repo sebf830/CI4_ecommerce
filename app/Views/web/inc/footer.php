@@ -107,3 +107,5 @@
           });
       });
   </script>
+  <script src="<?= base_url('assets/web/js/home.js') ?>"></script>
+  <script src="<?= base_url('assets/web/js/produit.js') ?>"></script>

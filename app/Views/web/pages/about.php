@@ -21,6 +21,13 @@
          </div>
          <h5>Sébastien Flouvat</h5>
          <p>Développeur web PHP</P>
+         <br>
+         <span>
+             <img src="<?= base_url('assets/web/images/laravel.png') ?>" height="50" width="50" />
+         </span>
+         <span>
+             <img src="<?= base_url('assets/web/images/ci4.png') ?>" height="60" width="60" />
+         </span>
      </div>
 
  </div>

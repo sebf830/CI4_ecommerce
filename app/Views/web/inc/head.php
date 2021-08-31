@@ -17,8 +17,7 @@
 <!--- fonteawesome -->
 <script src="https:use.fontawesome.com/releases/v5.15.1/js/all.js" crossorigin="anonymous"></script>
 <!-- scripts -->
-<script src="<?= base_url('assets/web/js/home.js') ?>"></script>
-<script src="<?= base_url('assets/web/js/produit.js') ?>"></script>
+
 <!-- css -->
 <link rel="shortcut icon" href="<?= base_url('public/uploads/paw2.ico') ?>" type="image/x-icon" />
 <link href="<?= base_url('assets/web/css/home.css') ?>" rel="stylesheet" type="text/css" media="all" />
