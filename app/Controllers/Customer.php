@@ -14,13 +14,18 @@ use App\Controllers\BaseController;
 
 class Customer extends BaseController
 {
+
+    public function login_page($page = 'Connexion')
+    {
+        $data = array('title' => $page);
+        return view('web/pages/login_client', ['data' => $data]);
+    }
     public function client_login($page = 'Connexion')
     {
         $data = array('title' => $page);
 
         if ($this->request->getMethod() == 'post') {
             $values = $this->request->getVar();
-
 
             $rules = [
                 'customer_email' => 'required|min_length[2]|max_length[30]',
@@ -52,7 +57,6 @@ class Customer extends BaseController
                 echo '<script>window.history.go(-2)</script>';
             }
         }
-        return view('web/pages/login_client', ['data' => $data]);
     }
 
     public function send_password($page = 'reinitialiser')

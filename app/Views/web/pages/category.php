@@ -9,7 +9,6 @@
 
      <div class="section_category card_section_home">
          <?php foreach ($allCategories as $single_products) : ?>
-
              <div class="card_home">
                  <div class="imgCardHome">
                      <a href="<?= base_url('produit/' . $single_products['product_id']) ?>">

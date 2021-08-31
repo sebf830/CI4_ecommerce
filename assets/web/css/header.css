@@ -150,7 +150,7 @@ ul.dc_mm-orange li a {
     color: #fff;
     display: block;
     float: left;
-    font-size: 14px;
+    font-size: 13px;
     padding: 20px 32px;
     text-decoration: none;
     text-shadow: 1px 1px 1px #000;
@@ -315,6 +315,7 @@ ul.dc_mm-orange li .sub-container.non-mega li a:hover {
 @media only screen and (max-width:1240px) {
     ul.dc_mm-orange li a {
         padding: 20px 24px;
+        font-size: 12px;
     }
     .input-search {
         width: 220px;
@@ -332,7 +333,7 @@ ul.dc_mm-orange li .sub-container.non-mega li a:hover {
 @media only screen and (max-width:1024px) {
     ul.dc_mm-orange li a {
         padding: 20px 13px;
-        font-size: 14px;
+        font-size: 12px;
     }
     ul.dc_mm-orange li a .dc-mega-icon {
         right: 3px;
@@ -414,7 +415,7 @@ ul.dc_mm-orange li .sub-container.non-mega li a:hover {
 @media only screen and (max-width:640px) {
     ul.dc_mm-orange li a {
         padding: 11px;
-        font-size: 0.9em;
+        font-size: 0.6em;
     }
     ul.dc_mm-orange li .sub li {
         width: 150px;

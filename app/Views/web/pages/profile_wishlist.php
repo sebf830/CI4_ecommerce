@@ -32,6 +32,4 @@
         <?php endif ?>
         </div>
 </main>
-
-
 <?= $this->endSection() ?>

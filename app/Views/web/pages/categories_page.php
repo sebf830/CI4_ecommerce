@@ -18,8 +18,6 @@
      </div>
 
  </div>
-
-
  <!-- loader  -->
 
  <?= $this->endSection() ?>

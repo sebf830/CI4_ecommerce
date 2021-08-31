@@ -35,9 +35,7 @@
                 <br><br>
                 <span class="grey-text">Auteur</span>
                 <input type="text" name="author" value="<?= $article_detail['author_article'] ?>">
-
                 <br><br>
-
                 <span class="grey-text">Catégorie</span><br>
                 <div class="input-field">
                     <select name="categorie">
@@ -58,7 +56,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="row">
                     <div class="col s12">
                         <div class="row">

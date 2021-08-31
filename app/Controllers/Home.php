@@ -298,4 +298,10 @@ class Home extends BaseController
 		}
 		return view('web/pages/search', ['data' => $data]);
 	}
+
+	public function about_page($page = 'About us')
+	{
+		$data = array('title' => $page);
+		return view('web/pages/about', ['data' => $data]);
+	}
 }

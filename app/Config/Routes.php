@@ -47,6 +47,8 @@ $routes->get('blog', 'Blog::index');
 $routes->get('article/(:num)', 'Blog::read_article/$1');
 $routes->get('/categorie_blog/(:num)', 'Blog::categorie/$1');
 $routes->match(['get', 'post'], 'recherche_blog', 'Blog::blog_search');
+$routes->get('/about', 'Home::about_page');
+
 
 //shopping cart
 $routes->get('/panier', 'Cart::index');
@@ -58,7 +60,8 @@ $routes->get('/order_confirmation', 'Checkout::confirmation');
 $routes->get('/exit_order', 'Checkout::exit_order');
 
 //client-connexion/inscription
-$routes->match(['get', 'post'], '/client/connexion', 'Customer::client_login',  ['filter' => 'noauth']);
+$routes->get('/connexion', 'customer::login_page');
+$routes->post('/client/connexion', 'Customer::client_login',  ['filter' => 'noauth']);
 $routes->match(['get', 'post'], '/client/inscription', 'Customer::client_register', ['filter' => 'noauth']);
 $routes->match(['get', 'post'], '/client/reinitialiser', 'Customer::send_password', ['filter' => 'noauth']);
 $routes->get('/logout', 'Customer::logout');

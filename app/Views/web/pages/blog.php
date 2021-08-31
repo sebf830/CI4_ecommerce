@@ -12,7 +12,7 @@
                  <?php foreach ($getArticles as $article) : ?>
                      <div class="card card_blog">
                          <div class="card-image">
-                             <img src="<?= base_url('assets/web/images/' . $article['image_article1']) ?>">
+                             <img src="<?= base_url('assets/web/images/' . $article['image_article1']) ?>" width="400" height="230">
                          </div>
                          <div class="card-content">
                              <span class="title_article_blog"><?= $article['title_article'] ?></span><br>
@@ -85,6 +85,11 @@
                      <div class="card-content">
                          <p><?= $getArticle['intro'] ?></p>
                          <br>
+                         <a href="#">
+                             <div style="border:1px solid #ededed">
+                                 <img src="<?= base_url('assets/web/images/banner_ad_blog.png') ?>">
+                             </div>
+                         </a>
                          <?= $getArticle['text_article'] ?>
                      </div>
                      <div class="card-action">

@@ -61,7 +61,6 @@
                     data: {
                         texte: $('#reply_text').val(),
                         conversation: <?= isset($id_conversation) ? $id_conversation : '' ?>
-
                     },
                     datatype: 'JSON',
                     success: function(response) {}

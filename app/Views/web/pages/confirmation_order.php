@@ -67,15 +67,6 @@
             <small>Duis <span class="link_terms">Venus-Shop</span>
                 aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat>non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</small>
         </div>
-
-
-
-
     </div>
-
-
-
-
-
 </div>
 <?= $this->endSection() ?>

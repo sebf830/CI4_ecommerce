@@ -7,7 +7,7 @@
             <h5>Espace Personnel</h5>
             <p>Connectez-vous à votre compte client.</p>
             <br>
-            <form action="" method="post">
+            <form action="<?= base_url('client/connexion') ?>" method="post">
                 <?php if (session()->get('success')) : ?>
                     <p style="color:lightgreen; font-size:14px;"> <?= session()->get('success') ?></p>
                 <?php endif; ?>

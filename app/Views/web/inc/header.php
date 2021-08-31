@@ -11,7 +11,7 @@
                     <?php if (session()->get('customer_id')) : ?>
                         <a href="<?php echo base_url('logout'); ?>"><i class="fas fa-user"></i> <span class="logout_span">Déconnexion</span></a>
                     <?php else : ?>
-                        <a href="<?php echo base_url('client/connexion'); ?>"><i class="fas fa-user"></i> <span class="login_span">Connexion</span></a>
+                        <a href="<?php echo base_url('connexion'); ?>"><i class="fas fa-user"></i> <span class="login_span">Connexion</span></a>
                     <?php endif ?>
                 </li>
 
@@ -71,6 +71,9 @@
             <li class="<?php if ($_SERVER['PATH_INFO'] == '/blog') : ?>
                                <?php echo "active"; ?>
                         <?php endif ?>"><a href="<?= base_url('blog'); ?>">Blog</a></li>
+            <li class="<?php if ($_SERVER['PATH_INFO'] == '/about') : ?>
+                               <?php echo "active"; ?>
+                        <?php endif ?>"><a href="<?= base_url('about'); ?>">About us</a></li>
 
 
             <?php if (session()->get('customer_id')) : ?>
@@ -94,6 +97,8 @@
         <li><a href="<?= base_url('panier'); ?>">Panier</a></li>
         <li><a href="<?= base_url('contact'); ?>">Contact</a></li>
         <li><a href="<?= base_url('blog'); ?>">Blog</a></li>
+        <li><a href="<?= base_url('about'); ?>">About us</a></li>
+
         <?php if (session()->get('customer_id')) : ?>
             <li class="<?php if ($_SERVER['PATH_INFO'] == '/profile') : ?>
                                <?= "active"; ?>
@@ -106,7 +111,7 @@
             <?php if (session()->get('customer_id')) : ?>
                 <a href="<?= base_url('logout'); ?>"><i class="fas fa-user"></i> Déconnexion</a>
             <?php else : ?>
-                <a href="<?= base_url('client/connexion'); ?>"><i class="fas fa-user"></i> Connexion</a>
+                <a href="<?= base_url('connexion'); ?>"><i class="fas fa-user"></i> Connexion</a>
             <?php endif ?>
         </li>
     </ul>

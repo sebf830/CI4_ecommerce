@@ -181,14 +181,18 @@
 
         <div class="stats_ranking" style="width:28%;padding: 0 15px;">
             <div style="display:flex;flex-direction:column;text-align:center;justify-content:center;">
-                <h1 style="color:orange;"><?= isset($avg['rank']) ?  number_format($avg['rank'], 1) : 0 ?> </h1>
+                <h1 style="color:orange;"><?= isset($avg['rank']) ?  number_format($avg['rank'], 1) : '<span style="font-size:18px;">Aucun avis</span>' ?> </h1>
                 <span id="bones_avg" style="font-size:22px"></span><br>
-                <?php if ($avg['id_ranking'] > 0) : ?>
-                    <span>(<?= $avg['id_ranking'] ?> avis publiés)</span>
-                <?php else : ?>
+                <?php if ($avg['id_ranking'] == 0) : ?>
                     <span>(0 avis publié)</span>
+                <?php elseif ($avg['id_ranking'] == 1) : ?>
+                    <span>(<?= $avg['id_ranking'] ?> avis publié)</span>
+                <?php else : ?>
+                    <span>(<?= $avg['id_ranking'] ?> avis publiés)</span>
                 <?php endif ?>
                 <br><br>
+
+
                 <?php if (count($hasRank) == 0) : ?>
                     <a href="<?= base_url('/produit/avis/' . $single['product_id']) ?>" class="button_rank btn-small purple">Laisser un avis</a>
                 <?php else :  ?>
@@ -266,8 +270,7 @@
         for (var i = 0; i < black; i++) {
             $('#bones_avg').append('<i class="fa fa-bone fa-fw" style="transform:rotate(135deg);"></i>')
         }
-    </script>
-    <script>
+
         $(function() {
 
             $(document).on('click', '#paw', function() {
@@ -295,75 +298,4 @@
             });
         });
     </script>
-
-    <script>
-        const imgs = document.querySelectorAll('.img-select a');
-        const imgBtns = [...imgs];
-        let imgId = 1;
-
-        imgBtns.forEach((imgItem) => {
-            imgItem.addEventListener('click', (event) => {
-                event.preventDefault();
-                imgId = imgItem.dataset.id;
-                slideImage();
-            });
-        });
-
-        function slideImage() {
-            const displayWidth = document.querySelector('.img-showcase img:first-child').clientWidth;
-
-            document.querySelector('.img-showcase').style.transform = `translateX(${- (imgId - 1) * displayWidth}px)`;
-        }
-        window.addEventListener('resize', slideImage);
-    </script>
-
-    <script>
-        function responsiveSlider() {
-            const slider = document.querySelector('.container_slider_h');
-            let sliderWidth = slider.offsetWidth / 3;
-            const sliderList = document.querySelector('.list_item_h');
-            let items = sliderList.querySelectorAll('.item_slider_h').length - 2;
-            let count = 1;
-
-            window.addEventListener('resize', function() {
-                sliderWidth = slider.offsetWidth;
-            });
-
-            function prevSlide() {
-                if (count > 1) {
-                    count = count - 2;
-                    sliderList.style.left = '-' + count * sliderWidth + 'px';
-                    count++;
-                } else if (count == 1) {
-                    count = items - 1;
-                    sliderList.style.left = '-' + count * sliderWidth + 'px';
-                    count++;
-                }
-
-            }
-
-            function nextSlide() {
-                if (count < items) {
-                    sliderList.style.left = '-' + count * sliderWidth + 'px';
-                    count++;
-
-                } else if (count == items) {
-                    sliderList.style.left = '0px';
-                    count = 1;
-
-                }
-            }
-            prev.addEventListener('click', prevSlide);
-            next.addEventListener('click', nextSlide);
-            // setInterval(function() {
-            //     nextSlide();
-            // }, 3000);
-        }
-
-        window.addEventListener('load', function() {
-            responsiveSlider();
-        });
-    </script>
-
-
     <?= $this->endSection() ?>

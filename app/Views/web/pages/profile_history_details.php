@@ -35,10 +35,6 @@
                 <?= $shipping_details['shipping_address'] ?><br>
                 <?= $shipping_details['shipping_city'] ?><br>
                 <?= $shipping_details['shipping_zipcode'] ?><br>
-
-
-
-
             </div>
         </div>
     </div>

@@ -14,9 +14,9 @@
     <?= $this->renderSection('body-contents'); ?>
 
 
+    <footer>
+        <?= $this->include('web/inc/footer') ?>
+    </footer>
 </body>
-<footer>
-    <?= $this->include('web/inc/footer') ?>
-</footer>
 
 </html>
