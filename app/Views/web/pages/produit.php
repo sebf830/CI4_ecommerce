@@ -282,7 +282,6 @@
                     $("#paw").html('<i class="Medium pink-text  text-lighten-1 material-icons" style="font-size:35px;">pets</i>');
                     $("#paw").addClass("liked");
                     $("#message").fadeIn().text('Produit ajouté à la liste d\'envie');
-
                 }
                 $.ajax({
                     url: '<?= base_url('ajax_wishlist') ?>',
